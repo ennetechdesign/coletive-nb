@@ -227,6 +227,7 @@
     width: 100%;
   }
   #rodape .contatos {
+    max-width: none;
     align-items: flex-end;
     z-index: 1;
   }
@@ -235,11 +236,7 @@
     gap: 8px;
   }
   #rodape .contatos .card-tell .titulo {
-    align-items: flex-end;
     gap: 8px;
-  }
-  #rodape .contatos .card-tell .titulo .texto {
-    line-height: normal;
   }
   #rodape .contatos .card-tell .tells .tell {
     gap: 8px;
@@ -470,25 +467,24 @@
     padding: 70px 100px 50px;
   }
   #rodape .logo {
-    width: 350px;
-  }
-  #rodape .logo img {
-    border-radius: 30px;
+    width: 100px;
   }
   #rodape .contatos {
-    gap: 70px;
-  }
-  #rodape .contatos .card-tell {
+    gap: 20px;
+    padding: 35px 35px 30px;
     border-radius: 40px;
-    padding: 35px;
   }
   #rodape .contatos .card-tell .titulo .texto {
     font-size: 28px;
-    line-height: normal;
+  }
+  #rodape .contatos .card-tell h3.titulo .texto {
+    font-size: 28px;
+  }
+  #rodape .contatos .card-tell h4.titulo .texto {
+    font-size: 24px;
   }
   #rodape .contatos .card-tell .titulo .icone {
-    font-size: 1em;
-    padding: 10px 20px;
+    font-size: 1.4em;
   }
   #rodape .contatos .card-tell .tells .tell .icone,
   #rodape .tells-emergencia .tells .tell .icone {
@@ -499,7 +495,7 @@
     border-radius: 30px;
   }
   #rodape .tells-emergencia {
-    margin-top: -300px;
+    margin-top: -250px;
   }
   #rodape .tells-emergencia .texto {
     font-size: 24px;
@@ -823,7 +819,7 @@
     gap: 8em;
   }
   #rodape .logo {
-    width: 250px;
+    width: 100px;
   }
   #rodape .contatos .card-tell {
     padding: 35px 30px;
