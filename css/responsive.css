@@ -267,6 +267,9 @@
     padding: 0;
     margin-top: 100px;
   }
+  #rodape .img {
+    margin-top: 15%;
+  }
 }
 
 @media screen and (min-width: 1200px) and (orientation: landscape) { /* Desktop */
@@ -523,9 +526,6 @@
   #rodape .copyright {
     font-size: 16px;
   }
-  #rodape .img {
-    margin-top: 25%;
-  }
 }
 
 @media screen and (max-width: 1200px) and (orientation: landscape) { /* Mobile Deitado */
@@ -668,7 +668,6 @@
   }
   #rodape .img {
     width: 250px;
-    margin-top: 36%;
   }
 }
 
