@@ -866,7 +866,7 @@
   box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
     0px 4px 4px 0px var(--sombra-cinza);
 }
-#rodape .container-logo-contatos {
+#rodape .main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -881,6 +881,12 @@
   border-radius: 100%;
   box-shadow: 0px 4px 4px 0px var(--sombra-preta);
 }
+#rodape .link-lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
 #rodape .contatos {
   max-width: 340px;
   display: flex;
@@ -894,14 +900,16 @@
   box-shadow: 0px 4px 4px 0px var(--sombra-branca),
     0px 4px 4px 0px var(--sombra-cinza);
 }
-#rodape .contatos .card-tell {
+#rodape .contatos .card-tell,
+#rodape .pesquisas {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 5px;
 }
-#rodape .contatos .card-tell .titulo {
+#rodape .contatos .card-tell .titulo,
+#rodape .pesquisas .titulo {
   color: var(--amarela);
   display: flex;
   justify-content: center;
@@ -910,7 +918,8 @@
   text-shadow: 4px 4px 4px var(--sombra-amarela),
     4px 4px 4px var(--sombra-cinza);
 }
-#rodape .contatos .card-tell .titulo .texto {
+#rodape .contatos .card-tell .titulo .texto,
+#rodape .pesquisas .titulo .texto {
   width: 100%;
   text-align: right;
   font-family: var(--titulo);
@@ -919,20 +928,24 @@
 #rodape .contatos .card-tell h3.titulo .texto {
   font-size: 24px;
 }
-#rodape .contatos .card-tell h4.titulo .texto {
+#rodape .contatos .card-tell h4.titulo .texto,
+#rodape .pesquisas h4.titulo .texto {
   font-size: 20px;
 }
-#rodape .contatos .card-tell .titulo .icone {
+#rodape .contatos .card-tell .titulo .icone,
+#rodape .pesquisas .titulo .icone {
   font-size: 2em;
   margin-top: -5px;
 }
-#rodape .contatos .card-tell .tells {
+#rodape .contatos .card-tell .tells,
+#rodape .pesquisas .fonts {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
 }
-#rodape .contatos .card-tell .tells .tell {
+#rodape .contatos .card-tell .tells .tell,
+#rodape .pesquisas .fonts .font {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -948,6 +961,7 @@
   display: none;
 }
 #rodape .contatos .card-tell .tells .tell .icone,
+#rodape .pesquisas .fonts .font .icone,
 #rodape .tells-emergencia .tells .tell .icone {
   font-size: 1.2em;
   text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
@@ -985,10 +999,9 @@
   font-size: 16px;
   padding: 0.4em 0.6em;
 }
-#rodape .tells-emergencia .tells .tell,
-#rodape .tells-emergencia .tells .tell,
 #rodape .contatos .card-tell .tells .tell,
-#rodape .contatos .card-tell .tells .tell {
+#rodape .pesquisas .fonts .font,
+#rodape .tells-emergencia .tells .tell {
   &:hover,
   &:focus-visible {
     background: #FFFFFD26;

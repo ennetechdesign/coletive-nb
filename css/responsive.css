@@ -220,19 +220,24 @@
   #rodape {
     gap: 0em;
   }
-  #rodape .container-logo-contatos {
+  #rodape .main-content {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
+  }
+  #rodape .link-lists {
+    align-items: end;
   }
   #rodape .contatos {
     max-width: none;
     align-items: flex-end;
     z-index: 1;
   }
-  #rodape .contatos .card-tell {
+  #rodape .contatos .card-tell,
+  #rodape .pesquisas {
     max-width: fit-content;
+    align-items: flex-end;
     gap: 8px;
   }
   #rodape .contatos .card-tell .titulo {
@@ -474,28 +479,32 @@
     padding: 35px 35px 30px;
     border-radius: 40px;
   }
-  #rodape .contatos .card-tell .titulo .texto {
-    font-size: 28px;
-  }
   #rodape .contatos .card-tell h3.titulo .texto {
     font-size: 28px;
   }
-  #rodape .contatos .card-tell h4.titulo .texto {
+  #rodape .contatos .card-tell h4.titulo .texto,
+  #rodape .pesquisas h4.titulo .texto {
     font-size: 24px;
   }
-  #rodape .contatos .card-tell .titulo .icone {
-    font-size: 1.4em;
+  #rodape .contatos .card-tell .titulo .icone,
+  #rodape .pesquisas .titulo .icone {
+    font-size: 1.5em;
   }
   #rodape .contatos .card-tell .tells .tell .icone,
+  #rodape .pesquisas .fonts .font .icone,
   #rodape .tells-emergencia .tells .tell .icone {
     font-size: 1.3em;
   }
-  #rodape .contatos .card-tell .tells .tell {
+  #rodape .contatos .card-tell .tells .tell,
+  #rodape .pesquisas .fonts .font {
     font-size: 24px;
     border-radius: 30px;
   }
+  #rodape .contatos hr {
+    margin-bottom: 10px;
+  }
   #rodape .tells-emergencia {
-    margin-top: -250px;
+    margin-top: -450px;
   }
   #rodape .tells-emergencia .texto {
     font-size: 24px;
@@ -504,7 +513,7 @@
     font-size: 20px;
   }
   #rodape .img {
-    margin-top: 15%;
+    margin-top: 25%;
   }
 }
 
@@ -639,18 +648,16 @@
   #rodape {
     padding: 60px 40px 10px;
   }
-  #rodape .contatos {
-    gap: 40px;
-  }
-  #rodape .contatos .card-tell .titulo .icone {
-    font-size: 1.2em;
+  #rodape .contatos .card-tell .titulo .icone,
+  #rodape .pesquisas .titulo .icone {
+    font-size: 2em;
   }
   #rodape .tells-emergencia {
-    margin-top: -35%;
+    margin-top: -48%;
   }
   #rodape .img {
     width: 250px;
-    margin-top: 16%;
+    margin-top: 36%;
   }
 }
 
