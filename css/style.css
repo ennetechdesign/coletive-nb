@@ -346,7 +346,8 @@
   left: -12%;
 }
 #conteudo #finalidades .textos .lista li strong,
-#conteudo #mapeamento .textos p strong {
+#conteudo #mapeamento .textos p strong,
+#rodape .copyright strong {
   font-weight: 800;
   color: var(--amarela);
   text-shadow: 4px 4px 4px var(--sombra-amarela),
@@ -1012,6 +1013,12 @@
   &:active {
     background: #FFFFFD4D;
   }
+}
+#rodape .copyright {
+  font-size: 12px;
+  text-align: center;
+  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  padding: 0 15px;
 }
 #rodape .img {
   width: 80vw;

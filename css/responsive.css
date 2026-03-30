@@ -254,10 +254,18 @@
   }
   #rodape .tells-emergencia {
     gap: 0.5em;
-    width: 98%;
+    width: 100%;
   }
   #rodape .tells-emergencia .texto {
     max-width: 27vw;
+  }
+  #rodape .copyright {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    text-align: left;
+    padding: 0;
+    margin-top: 100px;
   }
 }
 
@@ -511,6 +519,9 @@
   }
   #rodape .tells-emergencia .tells .tell {
     font-size: 20px;
+  }
+  #rodape .copyright {
+    font-size: 16px;
   }
   #rodape .img {
     margin-top: 25%;
