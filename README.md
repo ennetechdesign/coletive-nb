@@ -7,7 +7,7 @@
 
 ## 🌐 Aplicação Hospedada
 
- [Clique aqui para acessar o website](https://enne-amore.github.io/coletive-nb/)
+ [Clique aqui para acessar o website](https://coletivenaobinariepb.com.br)
 
 
 ## 🎞️ Pré-visualização
@@ -74,7 +74,7 @@
  No terminal, rode o seguinte comando:
  
  ```bash
- git clone https://github.com/Enne-Amore/coletive-nb.git
+ git clone https://github.com/ennetechdesign/coletive-nb.git
  ```
  
  2. **Entre no arquivo "index.html"**

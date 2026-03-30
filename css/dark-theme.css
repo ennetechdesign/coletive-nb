@@ -167,6 +167,30 @@
     0px 4px 4px 0px var(--sombra-cinza);
 }
 
+.dark-mode #conteudo #topo {
+  background-color: var(--amarela);
+  box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
+    0px 4px 4px 0px var(--sombra-cinza);
+  color: var(--cinza);
+  text-shadow: 4px 4px 4px var(--sombra-cinza);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--laranja);
+    box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
+      0px 4px 4px 0px var(--sombra-cinza);
+  }
+
+  &:active {
+    background-color: var(--branca);
+    box-shadow: 0px 4px 4px 0px var(--sombra-branca),
+      0px 4px 4px 0px var(--sombra-cinza);
+    color: var(--laranja);
+    text-shadow: 4px 4px 4px var(--sombra-laranja),
+      4px 4px 4px var(--sombra-cinza);
+  }
+}
+
 @media screen and (orientation: landscape) {
   /* Dark desktop */
   .dark-mode #conteudo #introducao {
