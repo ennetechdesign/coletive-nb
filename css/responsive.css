@@ -265,12 +265,12 @@
   }
 
   #conteudo #introducao .ilustracao {
-    width: 680px;
+    width: 600px;
   }
   #conteudo #introducao .frase-efeito {
-    font-size: 36px;
-    line-height: 60px;
-    transform: translate(-20%, -22%);
+    font-size: 40px;
+    line-height: 64px;
+    transform: translate(-15%, -18%);
   }
   #conteudo #introducao .frase-efeito strong {
     padding-top: 0.17em;
@@ -473,8 +473,8 @@
 
   #conteudo #topo {
     right: 2%;
-    padding: 20px 44px 20px 48px;
-    font-size: 3.3em;
+    padding: 20px 42px 20px 46px;
+    font-size: 3em;
   }
 
   #rodape {
@@ -910,20 +910,29 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape) {
+@media screen and (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape) { /* Particularidades de desktops menores */
   #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
     padding-right: 32px;
     font-size: 2.8em;
   }
 }
 
-@media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de telas enormes */
+@media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de desktops maiores */
   #cabecalho {
     padding-right: 80px;
     padding-left: 75px;
   }
   #cabecalho .nav-desktop .menu .dropdown {
     padding-right: 1em;
+  }
+
+  #conteudo #introducao .ilustracao {
+    width: 700px;
+  }
+  #conteudo #introducao .frase-efeito {
+    font-size: 44px;
+    line-height: 68px;
+    transform: translate(-15%, -26%);
   }
 
   #conteudo #atividades .lista .atividade p {
