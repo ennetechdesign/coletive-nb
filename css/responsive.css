@@ -94,33 +94,11 @@
     letter-spacing: 1.8px;
   }
 
-  #conteudo #finalidades,
-  #conteudo #mapeamento,
-  #conteudo #conselho-municipal {
-    align-items: flex-start;
-  }
-  #conteudo #finalidades,
-  #conteudo #conselho-municipal {
-    flex-direction: row-reverse;
-  }
-  #conteudo #mapeamento {
-    flex-direction: row;
-  }
-  #conteudo #finalidades .textos,
-  #conteudo #mapeamento .textos,
-  #conteudo #conselho-municipal .textos {
-    width: 597px;
-  }
   #conteudo #finalidades .textos .titulo,
   #conteudo #mapeamento .textos .titulo,
   #conteudo #conselho-municipal .textos .titulo {
     line-height: normal;
     max-width: 100%;
-  }
-  #conteudo #finalidades .img,
-  #conteudo #mapeamento .img,
-  #conteudo #conselho-municipal .img {
-    width: 500px;
   }
 
   #conteudo #atividades,
@@ -174,11 +152,6 @@
     gap: 10px;
   }
 
-  #conteudo #mapeamento .textos .btn-to-form {
-    align-items: end;
-    gap: 5px;
-    margin: 0.7em 0 0;
-  }
   #conteudo #mapeamento .textos .btn-to-form a {
     gap: 4px;
     padding-left: 30px;
@@ -190,7 +163,6 @@
 
   #conteudo #direitos {
     gap: 5em;
-    padding: 100px 0 140px;
   }
   #conteudo #direitos .direitos {
     width: 100%;
@@ -207,14 +179,11 @@
   #conteudo #direitos .direitos .card .texto {
     width: 85%;
     margin: auto 1em;
+    text-align: left;
   }
 
-  #conteudo #conselho-municipal .textos .titulo {
-    width: 100%;
-  }
   #conteudo #conselho-municipal .textos a {
     padding: 15px 35px;
-    margin: 0.7em 0 0.1em;
   }
 
   #rodape {
@@ -310,17 +279,29 @@
   #conteudo #finalidades {
     scroll-margin-top: calc(100vh - 650px);
   }
-
+  #conteudo #finalidades,
+  #conteudo #conselho-municipal {
+    flex-direction: row-reverse;
+  }
+  #conteudo #finalidades,
+  #conteudo #mapeamento {
+    padding: 60px 30px;
+  }
   #conteudo #finalidades,
   #conteudo #mapeamento,
   #conteudo #conselho-municipal {
-    padding: 60px 30px;
+    align-items: flex-start;
     gap: 5em;
   }
   #conteudo #finalidades .textos .titulo,
   #conteudo #mapeamento .textos .titulo,
   #conteudo #conselho-municipal .textos .titulo {
     font-size: 32px;
+  }
+  #conteudo #finalidades .textos,
+  #conteudo #mapeamento .textos,
+  #conteudo #conselho-municipal .textos {
+    width: 597px;
   }
   #conteudo #finalidades .textos .lista {
     padding-left: 36px;
@@ -333,6 +314,11 @@
   }
   #conteudo #finalidades .textos .lista li::before {
     left: -7%;
+  }
+  #conteudo #finalidades .img,
+  #conteudo #mapeamento .img,
+  #conteudo #conselho-municipal .img {
+    width: 500px;
   }
   #conteudo #finalidades .img img,
   #conteudo #mapeamento .img img,
@@ -445,6 +431,11 @@
 
   #conteudo #mapeamento {
     scroll-margin-top: calc(100vh - 630px);
+    flex-direction: row;
+  }
+  #conteudo #mapeamento .textos .btn-to-form {
+    align-items: end;
+    margin: .7em 0 0;
   }
 
   #conteudo #direitos .frase-efeito {
@@ -471,6 +462,13 @@
   }
   #conteudo #direitos .direitos hr {
     width: 70%;
+  }
+
+  #conteudo #conselho-municipal .textos .titulo {
+    width: 100%;
+  }
+  #conteudo #conselho-municipal .textos a {
+    margin: 0.7em 0 0.1em;
   }
 
   #conteudo #topo {
@@ -558,16 +556,36 @@
   }
 
   #conteudo #finalidades,
+  #conteudo #mapeamento {
+    padding: 45px 30px;
+  }
+  #conteudo #finalidades,
   #conteudo #mapeamento,
   #conteudo #conselho-municipal {
-    padding: 45px 30px;
     gap: 4em;
+  }
+  #conteudo #finalidades .textos,
+  #conteudo #mapeamento .textos,
+  #conteudo #conselho-municipal .textos {
+    width: 500px;
+    align-items: center;
+  }
+  #conteudo #finalidades .textos .titulo,
+  #conteudo #mapeamento .textos .titulo,
+  #conteudo #conselho-municipal .textos .titulo {
+    margin-bottom: 2px;
   }
   #conteudo #finalidades .textos .lista {
     padding-left: 4em;
   }
   #conteudo #finalidades .textos .lista li::before {
     left: -9%;
+  }
+  #conteudo #finalidades .img,
+  #conteudo #mapeamento .img,
+  #conteudo #conselho-municipal .img {
+    width: auto;
+    height: 260px;
   }
   #conteudo #finalidades .img img,
   #conteudo #mapeamento .img img,
@@ -637,6 +655,13 @@
     gap: 20px;
   }
 
+  #conteudo #mapeamento .textos .btn-to-form {
+    margin: .7em auto 0;
+  }
+
+  #conteudo #direitos {
+    padding: 80px 0;
+  }
   #conteudo #direitos .direitos {
     gap: 40px;
   }
@@ -649,6 +674,13 @@
   }
   #conteudo #direitos .direitos hr {
     width: 80%;
+  }
+
+  #conteudo #conselho-municipal {
+    padding-top: 30px;
+  }
+  #conteudo #conselho-municipal .textos a {
+    margin: 0.9em auto;
   }
 
   #conteudo #topo {

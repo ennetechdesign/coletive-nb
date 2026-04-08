@@ -64,8 +64,7 @@
     4px 4px 4px var(--sombra-cinza);
 }
 
-.dark-mode #conteudo #membres,
-.dark-mode #conteudo #conselho-municipal {
+.dark-mode #conteudo #membres {
   background: linear-gradient(0deg, #242325B3 0%, #242325B3 100%),
     linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
 }

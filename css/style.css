@@ -286,15 +286,7 @@
 }
 
 #conteudo #finalidades,
-#conteudo #mapeamento,
-#conteudo #conselho-municipal {
-  display: flex;
-  flex-direction: column;
-  padding: 35px 30px 80px;
-  justify-content: center;
-  align-items: center;
-  gap: 6em;
-  align-self: stretch;
+#conteudo #mapeamento {
   background: linear-gradient(
     180deg,
     var(--roxa-clara) 0%,
@@ -302,6 +294,17 @@
   );
   box-shadow: 0px 4px 4px 0px var(--sombra-roxa-escura),
     0px 4px 4px 0px var(--sombra-cinza);
+  padding: 35px 30px 80px;
+}
+#conteudo #finalidades,
+#conteudo #mapeamento,
+#conteudo #conselho-municipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+  align-self: stretch;
 }
 #conteudo #finalidades .textos,
 #conteudo #mapeamento .textos,
@@ -771,10 +774,11 @@
 }
 #conteudo #direitos .direitos .card .texto {
   color: var(--cinza);
+  text-align: center;
   text-shadow: 4px 4px 4px var(--sombra-cinza);
   font-size: 20px;
   font-weight: 600;
-  line-height: 35px;
+  line-height: 32px;
   width: 85%;
   margin: 0.6em auto 1em;
   transition: 0.2s ease-out;
@@ -787,9 +791,7 @@
 }
 
 #conteudo #conselho-municipal {
-  background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
-  box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
-    0px 4px 4px 0px var(--sombra-cinza);
+  padding: 0 30px;
 }
 #conteudo #conselho-municipal .textos .titulo {
   background: linear-gradient(
