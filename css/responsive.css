@@ -124,10 +124,13 @@
     gap: 10em;
   }
 
-  #conteudo #membres .frase-efeito,
+  #conteudo #membres .titulo,
   #conteudo #direitos .frase-efeito {
     letter-spacing: 1.6px;
     margin: auto 15%;
+  }
+  #conteudo #membres .apresentacao .ilustracoes .link {
+    width: max-content;
   }
 
   #conteudo #parceires .parceires {
@@ -147,6 +150,7 @@
     width: fit-content;
     margin: auto;
   }
+  #conteudo #membres .apresentacao .ilustracoes .link,
   #conteudo #parceires .parceires .parceire .texto a,
   #conteudo #conselho-municipal .textos a {
     gap: 10px;
@@ -374,10 +378,10 @@
   }
 
   #conteudo #membres {
-    padding: 50px 0px 120px 0px;
+    padding: 50px 0px 100px 0px;
     gap: 80px;
   }
-  #conteudo #membres .frase-efeito,
+  #conteudo #membres .titulo,
   #conteudo #direitos .frase-efeito {
     font-size: 32px;
     line-height: 55px;
@@ -404,6 +408,27 @@
     font-size: 24px;
     bottom: 2.4vh;
   }
+  #conteudo #membres .apresentacao .titulo {
+    margin-bottom: 5px;
+  }
+  #conteudo #membres .apresentacao .ilustracoes hr {
+    transform: translateY(850%);
+  }
+  #conteudo #membres .apresentacao .ilustracoes .video {
+    width: 900px;
+    border-radius: 50px;
+  }
+  #conteudo #membres .apresentacao .ilustracoes .link {
+    margin: 30px 49% 0;
+  }
+  #conteudo #membres .apresentacao .ilustracoes .link,
+  #conteudo #parceires .parceires .parceire .texto a,
+  #conteudo #mapeamento .textos .btn-to-form a,
+  #conteudo #conselho-municipal .textos a {
+    border-radius: 40px;
+    font-size: 26px;
+    line-height: normal;
+  }
 
   #conteudo #parceires .parceires .parceire .img {
     width: 320px;
@@ -416,13 +441,6 @@
   #conteudo #parceires .parceires .parceire .texto p {
     font-size: 24px;
     line-height: 40px;
-  }
-  #conteudo #parceires .parceires .parceire .texto a,
-  #conteudo #mapeamento .textos .btn-to-form a,
-  #conteudo #conselho-municipal .textos a {
-    border-radius: 40px;
-    font-size: 26px;
-    line-height: normal;
   }
   #conteudo #parceires .parceires .parceire .texto a .icone,
   #conteudo #conselho-municipal .textos a .icone {
@@ -630,7 +648,7 @@
   }
 
   #conteudo #membres {
-    padding: 45px 0px 70px 0px;
+    padding: 45px 0px 60px 0px;
     gap: 10em;
   }
   #conteudo #membres .diretories .ilustracoes hr {
@@ -646,6 +664,14 @@
   #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
     font-size: 16px;
     bottom: 2.4vh;
+  }
+  #conteudo #membres .apresentacao .ilustracoes hr {
+    transform: translateY(42vh);
+  }
+  #conteudo #membres .apresentacao .ilustracoes .video {
+    width: auto;
+    height: 280px;
+    border-radius: 5em;
   }
 
   #conteudo #parceires .parceires .parceire .texto {
@@ -783,7 +809,7 @@
   #conteudo #atividades .ilustracoes .aviso .icone {
     font-size: 1.4em;
   }
-  #conteudo #membres .frase-efeito,
+  #conteudo #membres .titulo,
   #conteudo #direitos .frase-efeito {
     font-size: 28px;
     line-height: 45px;

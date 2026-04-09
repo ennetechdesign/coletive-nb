@@ -456,6 +456,7 @@
   transform: translateY(350%);
 }
 #conteudo #membres .ilustracoes .imgs-container,
+#conteudo #membres .ilustracoes .video,
 #conteudo #atividades .ilustracoes .imgs-container {
   position: relative;
   width: 100%;
@@ -515,12 +516,12 @@
   justify-content: center;
   align-self: stretch;
   gap: 100px;
-  padding: 40px 0px 100px;
+  padding: 40px 0px 80px;
   background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
   box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
     0px 4px 4px 0px var(--sombra-cinza);
 }
-#conteudo #membres .frase-efeito,
+#conteudo #membres .titulo,
 #conteudo #direitos .frase-efeito {
   text-align: center;
   text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
@@ -565,6 +566,64 @@
   text-align: center;
   bottom: 1.5vh;
   user-select: none;
+}
+#conteudo #membres .apresentacao .titulo {
+  margin: auto 30px;
+}
+#conteudo #membres .apresentacao .ilustracoes .video {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px 0px var(--sombra-cinza);
+}
+#conteudo #membres .apresentacao .ilustracoes .video:fullscreen {
+  border-radius: 0;
+}
+#conteudo #membres .apresentacao .ilustracoes .link {
+  width: 330px;
+  margin: 40px auto 0;
+}
+#conteudo #membres .apresentacao .ilustracoes .link,
+#conteudo #parceires .parceires .parceire .texto a,
+#conteudo #mapeamento .textos .btn-to-form a,
+#conteudo #conselho-municipal .textos a {
+  display: flex;
+  padding: 15px 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 30px;
+  border: 2px solid var(--roxa-clara);
+  background: #FFFFFD33;
+  box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara),
+    4px 4px 4px 0px var(--sombra-cinza);
+  color: var(--roxa-clara);
+  text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
+    4px 4px 4px var(--sombra-cinza);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  user-select: none;
+}
+#conteudo #membres .apresentacao .ilustracoes .link,
+#conteudo #parceires .parceires .parceire .texto a,
+#conteudo #conselho-municipal .textos a {
+  &:hover,
+  &:focus-visible {
+    background-color: var(--roxa-clara);
+    color: var(--branca);
+    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  }
+
+  &:active {
+    background-color: var(--roxa-escura);
+    box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura),
+      4px 4px 4px 0px var(--sombra-cinza);
+  }
 }
 
 #conteudo #parceires .parceires,
@@ -613,48 +672,11 @@
   text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
     4px 4px 4px var(--sombra-cinza);
 }
-#conteudo #parceires .parceires .parceire .texto a,
-#conteudo #mapeamento .textos .btn-to-form a,
-#conteudo #conselho-municipal .textos a {
-  display: flex;
-  padding: 15px 35px;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  align-self: stretch;
-  border-radius: 30px;
-  border: 2px solid var(--roxa-clara);
-  background: #FFFFFD33;
-  box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara),
-    4px 4px 4px 0px var(--sombra-cinza);
-  color: var(--roxa-clara);
-  text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
-    4px 4px 4px var(--sombra-cinza);
-  text-align: center;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 32px;
-  user-select: none;
-}
-#conteudo #parceires .parceires .parceire .texto a,
-#conteudo #conselho-municipal .textos a {
-  &:hover,
-  &:focus-visible {
-    background-color: var(--roxa-clara);
-    color: var(--branca);
-    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-  }
-
-  &:active {
-    background-color: var(--roxa-escura);
-    box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura),
-      4px 4px 4px 0px var(--sombra-cinza);
-  }
-}
 #conteudo #parceires .parceires .parceire .texto a strong,
 #conteudo #conselho-municipal .textos a strong {
   font-weight: 800;
 }
+#conteudo #membres .apresentacao .ilustracoes .link .icone,
 #conteudo #parceires .parceires .parceire .texto a .icone,
 #conteudo #conselho-municipal .textos a .icone {
   font-size: 1.2em;

@@ -61,6 +61,7 @@
  │   ├── menu.js
  │   ├── tema-cores.js
  │   ├── topo.js
+ ├── videos/                 # Vídeos utilizados
  ├── index.html              # Arquivo principal de renderização
  ├── LICENSE                 # Arquivo de licença do projeto
  ├── README.md
