@@ -245,7 +245,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (orientation: landscape) { /* Desktop */
+@media screen and (min-width: 1200px) and (orientation: landscape) { /* desktop */
   #cabecalho {
     padding: 10px 60px;
     padding-left: 40px;
@@ -544,7 +544,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) and (orientation: landscape) { /* Mobile Deitado */
+@media screen and (max-width: 1200px) and (orientation: landscape) { /* landscape mobile */
   #cabecalho .logo {
     width: 215px;
   }
@@ -729,7 +729,7 @@
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 1200px) and (orientation: portrait) { /* Tablets */
+@media screen and (min-width: 500px) and (max-width: 1200px) and (orientation: portrait) { /* tablets */
   #cabecalho {
     padding: 10px 40px;
     padding-left: 20px;
@@ -926,7 +926,7 @@
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) and (orientation: portrait) { /* Particularidades de celulares maiores */
+@media screen and (min-width: 400px) and (max-width: 500px) and (orientation: portrait) { /* larger mobile */
   #conteudo #membres .ilustracoes hr,
   #conteudo #atividades .ilustracoes hr {
     transform: translateY(390%);
@@ -936,14 +936,14 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape) { /* Particularidades de desktops menores */
+@media screen and (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape) { /* smaller desktops */
   #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
     padding-right: 32px;
     font-size: 2.8em;
   }
 }
 
-@media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de desktops maiores */
+@media screen and (min-width: 1500px) and (orientation: landscape) { /* larger desktops */
   #cabecalho {
     padding-right: 80px;
     padding-left: 75px;

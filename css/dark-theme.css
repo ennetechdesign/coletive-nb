@@ -1,6 +1,8 @@
+/* scrollbar */
 .dark-mode body::-webkit-scrollbar-track {
   background-color: var(--preta);
 }
+
 .dark-mode body::-webkit-scrollbar-thumb {
   background-color: var(--amarela);
 }
@@ -8,10 +10,12 @@
   background-color: var(--laranja);
 }
 
+/* main */
 .dark-mode #conteudo {
   background: linear-gradient(180deg, #211E23 0%, var(--cinza) 100%);
 }
 
+/* hero */
 .dark-mode #conteudo #introducao {
   background-image: url(../img/fundo-amarelo-mobile.png);
 }
@@ -37,6 +41,7 @@
     0px 4px 4px 0px var(--sombra-cinza);
 }
 
+/* activities */
 .dark-mode #conteudo #atividades .titulo,
 .dark-mode #conteudo #parceires .titulo {
   background: linear-gradient(
@@ -72,6 +77,7 @@
     4px 4px 4px var(--sombra-cinza);
 }
 
+/* members */
 .dark-mode #conteudo #membres {
   background: linear-gradient(0deg, #242325B3 0%, #242325B3 100%),
     linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
@@ -111,6 +117,7 @@
   }
 }
 
+/* partnerships */
 .dark-mode #conteudo #parceires .parceires .parceire .texto {
   background: linear-gradient(
     100deg,
@@ -127,6 +134,7 @@
   text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
 }
 
+/* rights */
 .dark-mode #conteudo #direitos .direitos .card {
   background: linear-gradient(
     100deg,
@@ -167,6 +175,7 @@
     0px 4px 4px 0px var(--sombra-cinza);
 }
 
+/* btn to top */
 .dark-mode #conteudo #topo {
   background-color: var(--amarela);
   box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
@@ -191,8 +200,7 @@
   }
 }
 
-@media screen and (orientation: landscape) {
-  /* Dark desktop */
+@media screen and (orientation: landscape) { /* dark desktop */
   .dark-mode #conteudo #introducao {
     background-image: url(../img/fundo-amarelo-desktop.png);
   }
