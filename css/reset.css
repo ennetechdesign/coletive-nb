@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Fontes do site */
+/* fonts */
 @font-face {
   font-family: "Geometos Rounded";
   font-display: swap;
@@ -24,7 +24,7 @@
   font-display: block;
 }
 
-/* Reset das tags */
+/* reset tags */
 * {
   margin: 0;
   padding: 0;
@@ -32,10 +32,10 @@
 }
 
 body {
-  background-color: var(--roxa-clara);
-  color: var(--branca);
-  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-  font: 2vw var(--texto);
+  background-color: var(--light-purple);
+  color: var(--white);
+  text-shadow: 4px 4px 4px var(--white-shadow), 4px 4px 4px var(--gray-shadow);
+  font: 2vw var(--text);
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -50,7 +50,7 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--branca);
+  color: var(--white);
   transition: 0.2s;
 }
 
@@ -68,46 +68,46 @@ img {
   user-select: none;
 }
 
-/* Variáveis CSS */
+/* CSS variables */
 :root {
-  --roxa-escura: #713CA6;
-  --roxa-clara: #6A4EA6;
-  --amarela: #F2E530;
-  --amarela-2: #ECE35A;
-  --laranja: #F2C029;
-  --preta: #040008;
-  --cinza: #242325;
-  --branca: #FFFFFD;
-  --sombra-preta: #0400080D;
-  --sombra-cinza: #2423250D;
-  --sombra-branca: #FFFFFD08;
-  --sombra-roxa-escura: #713CA608;
-  --sombra-roxa-clara: #6A4EA608;
-  --sombra-amarela: #F2E53008;
-  --sombra-amarela-2: #ECE35A08;
-  --sombra-laranja: #F2C02908;
-  --titulo: "Geometos Rounded", sans-serif;
-  --texto: "Nunito", sans-serif;
+  --dark-purple: #713CA6;
+  --light-purple: #6A4EA6;
+  --yellow-100: #ECE35A;
+  --yellow-200: #F2E530;
+  --orange: #F2C029;
+  --black: #040008;
+  --gray: #242325;
+  --white: #FFFFFD;
+  --black-shadow: #0400080D;
+  --gray-shadow: #2423250D;
+  --white-shadow: #FFFFFD08;
+  --dark-purple-shadow: #713CA608;
+  --light-purple-shadow: #6A4EA608;
+  --yellow-shadow-100: #ECE35A08;
+  --yellow-shadow-200: #F2E53008;
+  --orange-shadow: #F2C02908;
+  --title: "Geometos Rounded", sans-serif;
+  --text: "Nunito", sans-serif;
 }
 
-/* Estilização da barrinha de rolagem */
+/* scrollbar */
 ::-webkit-scrollbar {
   width: auto;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--branca);
+  background-color: var(--white);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--roxa-clara);
+  background-color: var(--light-purple);
   border-radius: 1em;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--roxa-escura);
+  background-color: var(--dark-purple);
 }
 
-/* Animações dos elementos */
+/* animation */
 @keyframes load {
   0% {
     transform: scale(1);
@@ -161,7 +161,7 @@ img {
   }
 }
 
-@keyframes btn-mapeamento {
+@keyframes mapping-btn {
   0% {
     transform: scale(1);
   }

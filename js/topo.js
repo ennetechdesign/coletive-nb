@@ -1,16 +1,16 @@
-// Chamando a tag que representa o botão de ir pro topo
+// variable
 const topo = document.getElementById("topo");
 
-// Adicionando os eventos
+// back to top of page
 topo.addEventListener("click", function () {
   window.scrollTo(0, 0);
   document.getElementsByTagName("a")[7].focus();
 });
 
-// Aplicando a função de ocultar
+// hide btn
 document.addEventListener("scroll", ocultar);
 
-// Funcção de ocultar
+// hide btn function
 function ocultar() {
   if (innerWidth <= 1200 && innerWidth < innerHeight) { // portrait mobile
     if (window.scrollY > 7000) {

@@ -20,7 +20,7 @@ function temaInicial() {
   ).checked = true;
 }
 
-// Escutar mudança de qualquer um dos rádios
+// detect changes from any of the radios
 mobile_radios.forEach((radio) => {
   radio.addEventListener("change", () => {
     if (radio.checked) aplicarTema(radio.value);
@@ -33,7 +33,7 @@ desktop_radios.forEach((radio) => {
   });
 });
 
-// Mudar tema via teclado
+// change theme via keyboard
 labels.forEach((label) => {
   label.addEventListener("keypress", (tecla) => {
     if (tecla.key === "Enter") {

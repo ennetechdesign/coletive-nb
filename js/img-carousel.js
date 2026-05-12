@@ -1,5 +1,5 @@
-// declaração de variáveis
-const sliders = document.querySelectorAll(".imgs-container");
+// variables
+const sliders = document.querySelectorAll(".img-container");
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -8,7 +8,7 @@ sliders.forEach((slider) => {
   slider.addEventListener("mousedown", (e) => {
     isDown = true;
 
-    // realizar movimento horizontal
+    // perform horizontal movement
     scrollLeft = slider.scrollLeft;
     startX = e.pageX - slider.offsetLeft;
 
@@ -29,13 +29,13 @@ sliders.forEach((slider) => {
 
   slider.addEventListener("mousemove", (e) => {
     if (isDown === false) {
-      // não fazer nada se o clique não estiver pressionado
+      // do nothing if click isn't pressed
       return;
     } else {
-      // movimentar o scroll se o clique estiver pressionado
+      // move scroll if click is pressed
       e.preventDefault();
 
-      // realizar aceleração do movimento horizontal
+      // perform acceleration of horizontal movement
       const x = e.pageX - slider.offsetLeft;
       const walk = (x - startX) * 1;
       slider.scrollLeft = scrollLeft - walk;

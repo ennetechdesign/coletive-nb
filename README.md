@@ -7,7 +7,7 @@
 
 ## 🌐 Aplicação Hospedada
 
- [Clique aqui para acessar o website](https://coletivenaobinariepb.com.br)
+ [Clique aqui para acessar o website](https://ennetechdesign.github.io/coletive-nb)
 
 
 ## 🎞️ Pré-visualização
@@ -29,9 +29,9 @@
 
 ## 🚀 Tecnologias Utilizadas
 
-  <p align="left">
+  <p>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" alt="HTML" width="40" height="40"/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/2048px-Official_CSS_Logo.svg.png" title="CSS" alt="CSS" width="40" height="40"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg" title="CSS" alt="CSS" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
   </p>
 
@@ -55,11 +55,11 @@
  │   ├── open-dyslexic/
  ├── img/                    # Imagens utilizadas 
  ├── js/                     # Arquivos JavaScript
- │   ├── btn-mapeamento.js 
- │   ├── ilustracoes.js
+ │   ├── mapping-btn.js 
+ │   ├── img-carousel.js
  │   ├── load.js
  │   ├── menu.js
- │   ├── tema-cores.js
+ │   ├── color-theme.js
  │   ├── topo.js
  ├── videos/                 # Vídeos utilizados
  ├── index.html              # Arquivo principal de renderização
@@ -108,18 +108,18 @@
  - **Geometos Rounded**  
    Exemplo de uso:  
    `font-family: "Geometos Rounded";` ou 
-   `font-family: var(--titulo);`
+   `font-family: var(--title);`
  - **Nunito**  
    Exemplo de uso:  
    `font-family: "Nunito";` ou 
-   `font-family: var(--texto);`
+   `font-family: var(--text);`
 
 
 ## 🌟 Referências de Uso
 
  - [Família de ícones utilizada](https://fontawesome.com/icons)
  - [Fonte de Texto: Geometos Rounded](https://www.dafont.com/pt/geometos-rounded.font)
- - [Fonte de Texto: Open Dyslexic](https://www.dafont.com/pt/open-dyslexic.font)
+ - [Fonte de Texto: Nunito](https://fonts.google.com/specimen/Nunito)
 
 
 ## 🔧 Suporte
