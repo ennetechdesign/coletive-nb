@@ -416,17 +416,18 @@
   }
   #main #members .presentation .img-carousel .video {
     width: 900px;
+    height: 505px;
     border-radius: 50px;
   }
   #main #members .presentation .img-carousel .link {
-    margin: 30px 49% 0;
+    margin: 30px 51% 0;
   }
   #main #members .presentation .img-carousel .link,
   #main #partners .list .item .text a,
   #main #mapping .texts .btn-to-form a,
   #main #municipal-council .texts a {
     border-radius: 40px;
-    font-size: 26px;
+    font-size: 24px;
     line-height: normal;
   }
 
@@ -454,6 +455,9 @@
   #main #mapping .texts .btn-to-form {
     align-items: end;
     margin: .7em 0 0;
+  }
+  #main #mapping .texts .btn-to-form a {
+    font-size: 26px;
   }
 
   #main #rights > .title {
@@ -669,8 +673,8 @@
     transform: translateY(42vh);
   }
   #main #members .presentation .img-carousel .video {
-    width: auto;
-    height: 280px;
+    width: 60vw;
+    height: 75vh;
     border-radius: 5em;
   }
 

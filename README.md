@@ -49,6 +49,7 @@
  │   ├── guia-de-estilo/
  │   ├── prototipos-de-tela/
  │   ├── preview.mp4
+ ├── downloads/              # Arquivos disponíveis para download  
  ├── favicon/                # Arquivos da logo como ícone  
  ├── fonts/                  # Arquivos das fontes utilizadas  
  │   ├── geometos-rounded/
@@ -61,7 +62,6 @@
  │   ├── menu.js
  │   ├── color-theme.js
  │   ├── topo.js
- ├── videos/                 # Vídeos utilizados
  ├── index.html              # Arquivo principal de renderização
  ├── LICENSE                 # Arquivo de licença do projeto
  ├── README.md
