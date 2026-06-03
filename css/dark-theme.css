@@ -23,7 +23,8 @@
 .dark-mode #main #hero .text,
 .dark-mode #main #members .title,
 .dark-mode #main #rights > .title,
-.dark-mode #main #municipal-council .texts .title {
+.dark-mode #main #municipal-council .texts .title,
+.dark-mode #main #donation .texts .title {
   background: linear-gradient(90deg, var(--yellow-200) 0%, var(--yellow-100) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -71,14 +72,16 @@
 
 .dark-mode #main #activities .list .item p strong,
 .dark-mode #main #partners .list .item .text p strong,
-.dark-mode #main #municipal-council .texts p strong {
+.dark-mode #main #municipal-council .texts p strong,
+.dark-mode #main #donation .texts p strong {
   color: var(--yellow-200);
   text-shadow: 4px 4px 4px var(--yellow-shadow-200),
     4px 4px 4px var(--gray-shadow);
 }
 
 /* members */
-.dark-mode #main #members {
+.dark-mode #main #members,
+.dark-mode #main #donation {
   background: linear-gradient(0deg, #242325B3 0%, #242325B3 100%),
     linear-gradient(180deg, var(--yellow-200) 0%, var(--orange) 100%);
 }
@@ -91,7 +94,8 @@
 
 .dark-mode #main #members .presentation .img-carousel .link,
 .dark-mode #main #partners .list .item .text a,
-.dark-mode #main #municipal-council .texts a {
+.dark-mode #main #municipal-council .texts a,
+.dark-mode #main #donation .texts .payment .pix-key button {
   background-color: #24232533;
   border-color: var(--yellow-200);
   box-shadow: 0px 4px 4px 0px var(--yellow-shadow-200),
@@ -129,7 +133,9 @@
 }
 
 .dark-mode #main #partners .list .item .text p,
-.dark-mode #main #municipal-council .texts p {
+.dark-mode #main #municipal-council .texts p,
+.dark-mode #main #donation .texts p,
+.dark-mode #main #donation .texts .payment .pix-key .note {
   color: var(--white);
   text-shadow: 4px 4px 4px var(--white-shadow), 4px 4px 4px var(--gray-shadow);
 }
@@ -173,6 +179,15 @@
   border-color: var(--yellow-200);
   box-shadow: 0px 4px 4px 0px var(--yellow-shadow-200),
     0px 4px 4px 0px var(--gray-shadow);
+}
+
+/* donation */
+.dark-mode #main #donation .texts .payment .qr-code img {
+  content: url("../img/qr-code-dark.avif");
+}
+
+.dark-mode #main #donation .figure img {
+  content: url("../img/doacao-dark.avif");
 }
 
 /* btn to top */

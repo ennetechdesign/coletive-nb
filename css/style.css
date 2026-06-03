@@ -273,6 +273,8 @@
 }
 
 #main #hero .figure img,
+#main #donation .texts .payment .qr-code img,
+#main #donation .figure img,
 #footer .figure img {
   background: none;
   filter: drop-shadow(
@@ -344,10 +346,11 @@
 
 #main #objectives .texts,
 #main #mapping .texts,
-#main #municipal-council .texts {
+#main #municipal-council .texts,
+#main #donation .texts {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: .5em;
 }
 
 #main #objectives .texts .title,
@@ -378,7 +381,8 @@
 
 #main #objectives .texts .list li,
 #main #mapping .texts p,
-#main #municipal-council .texts p {
+#main #municipal-council .texts p,
+#main #donation .texts p {
   position: relative;
   font-size: 20px;
   line-height: 35px;
@@ -401,7 +405,8 @@
 
 #main #objectives .img,
 #main #mapping .img,
-#main #municipal-council .figure {
+#main #municipal-council .figure,
+#main #donation .figure {
   width: 315px;
   height: auto;
 }
@@ -571,7 +576,8 @@
 }
 
 /* members */
-#main #members {
+#main #members,
+#main #donation {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -584,7 +590,8 @@
 }
 
 #main #members .title,
-#main #rights > .title {
+#main #rights > .title,
+#main #donation .texts .title {
   text-align: center;
   text-shadow: 4px 4px 4px var(--light-purple-shadow),
     0px 4px 4px var(--gray-shadow);
@@ -658,7 +665,8 @@
 #main #members .presentation .img-carousel .link,
 #main #partners .list .item .text a,
 #main #mapping .texts .btn-to-form a,
-#main #municipal-council .texts a {
+#main #municipal-council .texts a,
+#main #donation .texts .payment .pix-key button {
   display: flex;
   padding: 15px 35px;
   justify-content: center;
@@ -681,7 +689,8 @@
 
 #main #members .presentation .img-carousel .link,
 #main #partners .list .item .text a,
-#main #municipal-council .texts a {
+#main #municipal-council .texts a,
+#main #donation .texts .payment .pix-key button {
   &:hover,
   &:focus-visible {
     background-color: var(--light-purple);
@@ -743,7 +752,8 @@
 }
 
 #main #partners .list .item .text p strong,
-#main #municipal-council .texts p strong {
+#main #municipal-council .texts p strong,
+#main #donation .texts p strong {
   font-weight: 800;
   color: var(--light-purple);
   text-shadow: 4px 4px 4px var(--light-purple-shadow),
@@ -757,7 +767,8 @@
 
 #main #members .presentation .img-carousel .link .icon,
 #main #partners .list .item .text a .icon,
-#main #municipal-council .texts a .icon {
+#main #municipal-council .texts a .icon,
+#main #donation .texts .payment .pix-key button .icon {
   font-size: 1.2em;
 }
 
@@ -922,7 +933,8 @@
   width: 70%;
 }
 
-#main #municipal-council .texts p {
+#main #municipal-council .texts p,
+#main #donation .texts p {
   color: var(--gray);
   text-shadow: 4px 4px 4px var(--gray-shadow);
 }
@@ -931,6 +943,58 @@
   margin: 0.9em auto 1em;
   padding: 15px 25px;
   max-width: 290px;
+}
+
+/* donation */
+#main #donation {
+  padding: 40px 30px 80px;
+}
+
+#main #donation .texts .payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#main #donation .texts .payment .qr-code {
+  width: 200px;
+  height: auto;
+}
+
+#main #donation .texts .payment .pix-key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#main #donation .texts .payment .pix-key .note {
+  color: var(--gray);
+  text-shadow: 4px 4px 4px var(--gray-shadow);
+  font-size: 16px;
+}
+
+#main #donation .texts .payment .pix-key button {
+  border-radius: 40px;
+  gap: 8px;
+}
+
+#main #donation .texts .payment .pix-key .sr-only { /* screen reader only */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#main #donation .figure {
+  height: 318px;
 }
 
 /* btn to top */

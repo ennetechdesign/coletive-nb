@@ -120,6 +120,7 @@
  - [Família de ícones utilizada](https://fontawesome.com/icons)
  - [Fonte de Texto: Geometos Rounded](https://www.dafont.com/pt/geometos-rounded.font)
  - [Fonte de Texto: Nunito](https://fonts.google.com/specimen/Nunito)
+ - [Ilustrações de pessoas por Storyset](https://storyset.com/people)
 
 
 ## 🔧 Suporte

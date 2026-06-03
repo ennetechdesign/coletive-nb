@@ -288,7 +288,8 @@
     flex-direction: row-reverse;
   }
   #main #objectives,
-  #main #mapping {
+  #main #mapping,
+  #main #donation {
     padding: 60px 30px;
   }
   #main #objectives,
@@ -297,22 +298,24 @@
     align-items: flex-start;
     gap: 5em;
   }
-  #main #objectives .texts .title,
-  #main #mapping .texts .title,
-  #main #municipal-council .texts .title {
-    font-size: 32px;
-  }
   #main #objectives .texts,
   #main #mapping .texts,
   #main #municipal-council .texts {
     width: 597px;
+  }
+  #main #objectives .texts .title,
+  #main #mapping .texts .title,
+  #main #municipal-council .texts .title,
+  #main #donation .texts .title {
+    font-size: 32px;
   }
   #main #objectives .texts .list {
     padding-left: 36px;
   }
   #main #objectives .texts .list li,
   #main #mapping .texts p,
-  #main #municipal-council .texts p {
+  #main #municipal-council .texts p,
+  #main #donation .texts p {
     font-size: 24px;
     line-height: 40px;
   }
@@ -425,7 +428,8 @@
   #main #members .presentation .img-carousel .link,
   #main #partners .list .item .text a,
   #main #mapping .texts .btn-to-form a,
-  #main #municipal-council .texts a {
+  #main #municipal-council .texts a,
+  #main #donation .texts .payment .pix-key button {
     border-radius: 40px;
     font-size: 24px;
     line-height: normal;
@@ -450,6 +454,9 @@
 
   #main #mapping {
     scroll-margin-top: calc(100vh - 630px);
+  }
+  #main #mapping,
+  #main #donation {
     flex-direction: row;
   }
   #main #mapping .texts .btn-to-form {
@@ -486,11 +493,36 @@
     width: 70%;
   }
 
-  #main #municipal-council .texts .title {
-    width: 100%;
+  #main #municipal-council .texts .title,
+  #main #donation .texts .title {
+    width: max-content;
   }
   #main #municipal-council .texts a {
     margin: 0.7em 0 0.1em;
+  }
+
+  #main #donation {
+    scroll-margin-top: calc(100vh - 680px);
+  }
+  #main #donation .texts {
+    width: 617px;
+  }
+  #main #donation .texts .title {
+    margin: 0;
+  }
+  #main #donation .texts .payment {
+    flex-direction: row;
+    gap: 30px;
+  }
+  #main #donation .texts .payment .pix-key {
+    align-items: baseline;
+  }
+  #main #donation .texts .payment .pix-key .note {
+    font-size: 20px;
+  }
+  #main #donation .figure {
+    width: 450px;
+    height: 100%;
   }
 
   #main #topo {

@@ -51,13 +51,14 @@ li {
 a {
   text-decoration: none;
   color: var(--white);
-  transition: 0.2s;
+  transition: .2s;
 }
 
 button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  transition: .2s;
 }
 
 img {

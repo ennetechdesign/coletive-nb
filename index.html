@@ -137,6 +137,7 @@
     <script src="js/color-theme.js" defer></script>
     <script src="js/img-carousel.js" defer></script>
     <script src="js/mapping-btn.js" defer></script>
+    <script src="js/copy-pix.js" defer></script>
     <script src="js/topo.js" defer></script>
   </head>
 
@@ -209,7 +210,7 @@
         <div id="backdrop"></div>
 
         <section id="menu">
-          <h3 class="title">Navegação</h3>
+          <h3 class="title">Seções</h3>
 
           <hr />
 
@@ -262,6 +263,16 @@
                   role="menuitem"
                 >
                   Direitos
+                </a>
+              </li>
+
+              <li class="link" role="none">
+                <a
+                  href="#donation"
+                  aria-label="Ir à seção de Doação"
+                  role="menuitem"
+                >
+                  Doação
                 </a>
               </li>
 
@@ -385,6 +396,16 @@
                   role="menuitem"
                 >
                   Direitos
+                </a>
+              </li>
+
+              <li class="link" role="none">
+                <a
+                  href="#donation"
+                  aria-label="Ir à seção de Doação"
+                  role="menuitem"
+                >
+                  Doação
                 </a>
               </li>
 
@@ -1155,6 +1176,63 @@
             </picture>
           </figure>
         </aside>
+      </section>
+
+      <section id="donation">
+        <div class="texts">
+          <h2 class="title">Nos ajude com qualquer valor</h2>
+
+          <p>
+            Apoiar financeiramente também é uma forma de sustentar a luta não-binária no nosso movimento, desde centavos até reais. Cada doação ajuda a <strong>viabilizar nossas ações nos territórios</strong>, <strong>manter o funcionamento do Coletive</strong> e <strong>garantir que o nosso CNPJ e site continuem ativos</strong>.
+          </p>
+
+          <div class="payment">
+            <figure class="qr-code">
+              <img
+                src="img/qr-code-light.png"
+                alt="QR Code da nossa chave pix"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="pix-key">
+              <span class="note">
+                Copiar chave pix:
+              </span>
+
+              <button
+                id="copy-pix"
+                aria-label="Botão para copiar a chave pix para a área de transferência"
+                title="Copiar chave pix"
+              >
+                <i class="fa-solid fa-copy icon" aria-hidden="true"></i>
+
+                <span class="text">99.999.999/9999-99</span>
+              </button>
+
+              <!-- screen reader only -->
+              <span
+                id="copy-feedback"
+                class="sr-only"
+                aria-live="polite"
+                role="status"
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="figure">
+          <img
+            src="img/doacao-light.avif"
+            alt=""
+            class="light-img"
+            width="315"
+            height="318"
+            loading="lazy"
+          />
+        </figure>
       </section>
 
       <button
