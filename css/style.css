@@ -979,6 +979,7 @@
 #main #donation .texts .payment .pix-key button {
   border-radius: 40px;
   gap: 8px;
+  font-weight: 500;
 }
 
 #main #donation .texts .payment .pix-key .sr-only { /* screen reader only */

@@ -86,6 +86,12 @@
     linear-gradient(180deg, var(--yellow-200) 0%, var(--orange) 100%);
 }
 
+.dark-mode #main #members .img-carousel hr {
+  border-color: #A67CFF;
+  box-shadow: 0px 4px 4px 0px #A67CFF08,
+    0px 4px 4px 0px var(--gray-shadow);
+}
+
 .dark-mode #main #members .img-carousel .note,
 .dark-mode #main #activities .img-carousel .note {
   color: var(--white);
