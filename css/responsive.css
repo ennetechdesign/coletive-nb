@@ -13,10 +13,10 @@
     display: flex;
   }
   #header .nav-desktop .menu .link {
-    padding: 15px 0;
+    padding: 15px;
   }
   #header .nav-desktop .menu .link a {
-    padding: 15px 20px;
+    padding: 15px 0;
   }
   #header .nav-desktop .menu .dropdown {
     position: relative;
@@ -125,12 +125,33 @@
   }
 
   #main #members .title,
+  #main #informational-materials .title,
   #main #rights > .title {
     letter-spacing: 1.6px;
-    margin: auto 15%;
   }
   #main #members .presentation .img-carousel .link {
     width: max-content;
+  }
+
+  #main #informational-materials,
+  #main #rights {
+    gap: 5em;
+  }
+  #main #informational-materials .list .card {
+    border-radius: 40px;
+    padding-bottom: 0;
+    gap: 30px;
+  }
+  #main #informational-materials .list .item:nth-child(odd) .card {
+    flex-direction: row-reverse;
+    padding-right: 35px;
+  }
+  #main #informational-materials .list .item:nth-child(even) .card {
+    flex-direction: row;
+    padding-left: 35px;
+  }
+  #main #informational-materials .list .card .text {
+    margin: 0;
   }
 
   #main #partners .list {
@@ -165,18 +186,11 @@
     max-width: fit-content;
   }
 
-  #main #rights {
-    gap: 5em;
-  }
   #main #rights .list {
     width: 100%;
   }
-  #main #rights > .title {
-    margin: auto 0;
-    width: 500px;
-  }
   #main #rights .list .card {
-    flex-direction: row;
+    flex-direction: row-reverse;
     border-radius: 40px;
     width: 575px;
   }
@@ -188,6 +202,14 @@
 
   #main #municipal-council .texts a {
     padding: 15px 35px;
+  }
+
+  #main #donation .texts .payment {
+    flex-direction: row;
+    gap: 30px;
+  }
+  #main #donation .texts .payment .pix-key {
+    align-items: baseline;
   }
 
   #footer {
@@ -265,7 +287,7 @@
   }
   #header .nav-desktop .menu .dropdown .dropdown-content {
     border-radius: 30px;
-    margin-left: -150%;
+    margin-left: -165%;
   }
 
   #main #hero .figure {
@@ -294,9 +316,9 @@
   }
   #main #objectives,
   #main #mapping,
-  #main #municipal-council {
+  #main #municipal-council,
+  #main #donation {
     align-items: flex-start;
-    gap: 5em;
   }
   #main #objectives .texts,
   #main #mapping .texts,
@@ -304,7 +326,12 @@
     width: 597px;
   }
   #main #objectives .texts .title,
+  #main #activities .title,
+  #main #members .title,
+  #main #informational-materials .title,
+  #main #partners .title,
   #main #mapping .texts .title,
+  #main #rights > .title,
   #main #municipal-council .texts .title,
   #main #donation .texts .title {
     font-size: 32px;
@@ -333,10 +360,6 @@
     border-radius: 40px;
   }
 
-  #main #activities .title,
-  #main #partners .title {
-    font-size: 32px;
-  }
   #main #activities .list .item p {
     font-size: 24px;
     line-height: 40px;
@@ -384,12 +407,14 @@
     padding: 50px 0px 100px 0px;
     gap: 80px;
   }
+  #main #members .title {
+    width: 800px;
+    margin: auto;
+  }
   #main #members .title,
+  #main #informational-materials .title,
   #main #rights > .title {
-    font-size: 32px;
     line-height: 55px;
-    letter-spacing: 1.6px;
-    margin: auto 9em;
   }
   #main #members .directors {
     display: flex;
@@ -412,7 +437,7 @@
     bottom: 2.4vh;
   }
   #main #members .presentation .title {
-    margin-bottom: 5px;
+    margin: auto auto 5px;
   }
   #main #members .presentation .img-carousel hr {
     transform: translateY(850%);
@@ -452,6 +477,40 @@
     font-size: 0.95em;
   }
 
+  #main #informational-materials .title,
+  #main #rights > .title {
+    width: 620px;
+  }
+  #main #informational-materials .list {
+    width: 900px;
+    gap: 60px;
+  }
+  #main #informational-materials .list .card {
+    width: calc(100% - 100px);
+    margin: auto;
+  }
+  #main #informational-materials .list .item:nth-child(odd) .card,
+  #main #rights .list .card:nth-child(1) {
+    transform: translateX(-100px);
+  }
+  #main #informational-materials .list .item:nth-child(even) .card,
+  #main #rights .list .card:last-child {
+    transform: translateX(100px);
+  }
+  #main #informational-materials .list .card .figure {
+    width: 410px;
+    height: 150px;
+    border-radius: 40px;
+  }
+  #main #informational-materials .list .card .text,
+  #main #rights .list .card .text {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  #main #informational-materials .list .card .icon {
+    font-size: 2em;
+  }
+
   #main #mapping {
     scroll-margin-top: calc(100vh - 630px);
   }
@@ -467,27 +526,14 @@
     font-size: 26px;
   }
 
-  #main #rights > .title {
-    width: 600px;
-  }
   #main #rights .list .card {
     border-radius: 40px;
     width: 575px;
-  }
-  #main #rights .list .card:nth-child(1) {
-    transform: translateX(-100px);
-  }
-  #main #rights .list .card:last-child {
-    transform: translateX(100px);
   }
   #main #rights .list .card .figure {
     width: 220px;
     height: 160px;
     border-radius: 40px;
-  }
-  #main #rights .list .card .text {
-    font-size: 24px;
-    line-height: 40px;
   }
   #main #rights .list hr {
     width: 70%;
@@ -509,13 +555,6 @@
   }
   #main #donation .texts .title {
     margin: 0;
-  }
-  #main #donation .texts .payment {
-    flex-direction: row;
-    gap: 30px;
-  }
-  #main #donation .texts .payment .pix-key {
-    align-items: baseline;
   }
   #main #donation .texts .payment .pix-key .note {
     font-size: 20px;
@@ -610,7 +649,8 @@
   }
 
   #main #objectives,
-  #main #mapping {
+  #main #mapping,
+  #main #donation {
     padding: 45px 30px;
   }
   #main #objectives,
@@ -620,7 +660,8 @@
   }
   #main #objectives .texts,
   #main #mapping .texts,
-  #main #municipal-council .texts {
+  #main #municipal-council .texts,
+  #main #donation .texts {
     width: 500px;
     align-items: center;
   }
@@ -708,6 +749,15 @@
     width: 60vw;
     height: 75vh;
     border-radius: 5em;
+  }
+
+  #main #informational-materials .list .card {
+    width: 600px;
+    margin: auto;
+  }
+  #main #informational-materials .list .card .figure {
+    width: 380px;
+    height: 120px;
   }
 
   #main #partners .list .item .text {

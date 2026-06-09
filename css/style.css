@@ -32,12 +32,17 @@
 }
 
 #header #modal-container {
+  position: relative;
   background-color: transparent;
   display: none;
-  width: max-content;
-  height: max-content;
+  width: auto;
+  height: auto;
   z-index: 3;
   border: 0;
+  overflow: visible;
+}
+#header #modal-container::-webkit-scrollbar {
+  width: 0;
 }
 
 #header #modal-container #backdrop {
@@ -52,22 +57,23 @@
 }
 
 #header #modal-container #menu {
-  position: fixed;
+  position: absolute;
   top: 0;
-  right: 0;
+  left: 35vw;
   background: radial-gradient(
     50% 50% at 50% 50%,
     var(--gray) 0%,
     var(--black) 100%
   );
   box-shadow: 4px 4px 4px 0px var(--black-shadow);
-  padding: 5.5em 4em;
+  padding: 5.5em 4em 8em;
+  border-bottom-left-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
   width: 65vw;
-  height: 100vh;
+  height: max-content;
   animation: menu-bar 0.35s ease-out 0.1s both;
 }
 
@@ -103,6 +109,7 @@
 #header .nav-desktop .menu .main-link {
   font-size: 20px;
   font-weight: 500;
+  text-align: center;
 }
 
 #header #modal-container #menu .nav .menu .link,
@@ -116,6 +123,12 @@
   border-radius: 30px;
   cursor: pointer;
   user-select: none;
+}
+#header #modal-container #menu .nav .menu .link:nth-child(4) {
+  padding: 15px;
+}
+#header #modal-container #menu .nav .menu .link:nth-child(4) a {
+  padding: 15px 0;
 }
 
 #header #modal-container #menu .nav .menu .link,
@@ -421,6 +434,7 @@
 
 /* activities */
 #main #activities,
+#main #informational-materials,
 #main #partners,
 #main #rights {
   position: relative;
@@ -590,6 +604,7 @@
 }
 
 #main #members .title,
+#main #informational-materials .title,
 #main #rights > .title,
 #main #donation .texts .title {
   text-align: center;
@@ -703,6 +718,108 @@
     box-shadow: 4px 4px 4px 0px var(--dark-purple-shadow),
       4px 4px 4px 0px var(--gray-shadow);
   }
+}
+
+/* informational materials */
+#main #informational-materials {
+  padding: 90px 0 0;
+}
+
+#main #informational-materials .list,
+#main #rights .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+#main #informational-materials .list .card {
+  padding-bottom: 25px;
+}
+
+#main #informational-materials .list .card,
+#main #rights .list .card {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-radius: 35px;
+  background-image: linear-gradient(100deg, var(--orange) 0%, var(--yellow-200) 100%);
+  box-shadow: 4px 4px 4px 0px var(--yellow-shadow-200),
+    4px 4px 4px 0px var(--gray-shadow);
+  width: 280px;
+  user-select: none;
+
+  &:hover,
+  &:focus-visible {
+    background-image: linear-gradient(
+      100deg,
+      var(--dark-purple) 0%,
+      var(--light-purple) 100%
+    );
+    box-shadow: 4px 4px 4px 0px var(--light-purple-shadow),
+      4px 4px 4px 0px var(--gray-shadow);
+  }
+
+  &:hover .figure img,
+  &:focus-visible .figure img {
+    transform: scale(1.2);
+  }
+
+  &:hover .text,
+  &:focus-visible .text,
+  &:hover .icon,
+  &:focus-visible .icon {
+    color: var(--white);
+    text-shadow: 4px 4px 4px var(--white-shadow), 4px 4px 4px var(--gray-shadow);
+  }
+
+  &:active {
+    background-image: linear-gradient(
+      100deg,
+      var(--light-purple) 0%,
+      var(--dark-purple) 100%
+    );
+    box-shadow: 4px 4px 4px 0px var(--dark-purple-shadow),
+      4px 4px 4px 0px var(--gray-shadow);
+  }
+}
+
+#main #informational-materials .list .card .figure,
+#main #rights .list .card .figure {
+  width: 280px;
+  height: auto;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+#main #informational-materials .list .card .figure img,
+#main #rights .list .card .figure img {
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px 0px var(--light-purple-shadow),
+    0px 4px 4px 0px var(--gray-shadow);
+  transition: 0.3s ease-out;
+  pointer-events: none;
+}
+
+#main #informational-materials .list .card .text {
+  margin: 0.6em auto;
+}
+
+#main #informational-materials .list .card .text,
+#main #rights .list .card .text {
+  color: var(--gray);
+  text-align: center;
+  text-shadow: 4px 4px 4px var(--gray-shadow);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  width: 85%;
+  transition: 0.2s ease-out;
+}
+
+#main #informational-materials .list .card .icon {
+  font-size: 3.5em;
+  color: var(--gray);
 }
 
 /* partnerships */
@@ -822,90 +939,12 @@
 }
 
 /* rights */
-#main #rights {
-  padding-top: 90px;
-}
-
 #main #rights > .title {
   margin: auto 8%;
 }
 
-#main #rights .list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-}
-
-#main #rights .list .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 35px;
-  background: linear-gradient(100deg, var(--orange) 0%, var(--yellow-200) 100%);
-  box-shadow: 4px 4px 4px 0px var(--yellow-shadow-200),
-    4px 4px 4px 0px var(--gray-shadow);
-  width: 280px;
-  user-select: none;
-
-  &:hover,
-  &:focus-visible {
-    background: linear-gradient(
-      100deg,
-      var(--dark-purple) 0%,
-      var(--light-purple) 100%
-    );
-    box-shadow: 4px 4px 4px 0px var(--light-purple-shadow),
-      4px 4px 4px 0px var(--gray-shadow);
-  }
-
-  &:hover .figure img,
-  &:focus-visible .figure img {
-    transform: scale(1.2);
-  }
-
-  &:hover .text,
-  &:focus-visible .text {
-    color: var(--white);
-    text-shadow: 4px 4px 4px var(--white-shadow), 4px 4px 4px var(--gray-shadow);
-  }
-
-  &:active {
-    background: linear-gradient(
-      100deg,
-      var(--light-purple) 0%,
-      var(--dark-purple) 100%
-    );
-    box-shadow: 4px 4px 4px 0px var(--dark-purple-shadow),
-      4px 4px 4px 0px var(--gray-shadow);
-  }
-}
-
-#main #rights .list .card .figure {
-  width: 280px;
-  height: auto;
-  border-radius: 35px;
-  overflow: hidden;
-}
-
-#main #rights .list .card .figure img {
-  border-radius: 35px;
-  box-shadow: 0px 4px 4px 0px var(--light-purple-shadow),
-    0px 4px 4px 0px var(--gray-shadow);
-  transition: 0.3s ease-out;
-  pointer-events: none;
-}
-
 #main #rights .list .card .text {
-  color: var(--gray);
-  text-align: center;
-  text-shadow: 4px 4px 4px var(--gray-shadow);
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 32px;
-  width: 85%;
   margin: 0.6em auto 1em;
-  transition: 0.2s ease-out;
 }
 
 #main #rights .list hr {
@@ -948,6 +987,7 @@
 /* donation */
 #main #donation {
   padding: 40px 30px 80px;
+  align-items: center;
 }
 
 #main #donation .texts .payment {

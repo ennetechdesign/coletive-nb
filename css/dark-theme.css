@@ -22,6 +22,7 @@
 
 .dark-mode #main #hero .text,
 .dark-mode #main #members .title,
+.dark-mode #main #informational-materials .title,
 .dark-mode #main #rights > .title,
 .dark-mode #main #municipal-council .texts .title,
 .dark-mode #main #donation .texts .title {
@@ -127,6 +128,46 @@
   }
 }
 
+/* informational materials */
+.dark-mode #main #informational-materials .list .card,
+.dark-mode #main #rights .list .card {
+  background-image: linear-gradient(
+    100deg,
+    var(--dark-purple) 0%,
+    var(--light-purple) 100%
+  );
+  box-shadow: 0px 4px 4px 0px var(--light-purple-shadow),
+    0px 4px 4px 0px var(--gray-shadow);
+
+  &:hover,
+  &:focus-visible {
+    background-image: linear-gradient(100deg, var(--orange) 0%, var(--yellow-200) 100%);
+    box-shadow: 0px 4px 4px 0px var(--yellow-shadow-200),
+      0px 4px 4px 0px var(--gray-shadow);
+  }
+    
+  &:hover .text,
+  &:focus-visible .text,
+  &:hover .icon,
+  &:focus-visible .icon {
+    color: var(--black);
+    text-shadow: 4px 4px 4px var(--black-shadow);
+  }
+
+  &:active {
+    background-image: linear-gradient(100deg, var(--yellow-200) 0%, var(--orange) 100%);
+    box-shadow: 0px 4px 4px 0px var(--orange-shadow),
+      0px 4px 4px 0px var(--gray-shadow);
+  }
+}
+
+.dark-mode #main #informational-materials .list .card .text,
+.dark-mode #main #informational-materials .list .card .icon,
+.dark-mode #main #rights .list .card .text {
+  color: var(--white);
+  text-shadow: 4px 4px 4px var(--white-shadow), 4px 4px 4px var(--gray-shadow);
+}
+
 /* partnerships */
 .dark-mode #main #partners .list .item .text {
   background: linear-gradient(
@@ -147,40 +188,6 @@
 }
 
 /* rights */
-.dark-mode #main #rights .list .card {
-  background: linear-gradient(
-    100deg,
-    var(--dark-purple) 0%,
-    var(--light-purple) 100%
-  );
-  box-shadow: 0px 4px 4px 0px var(--light-purple-shadow),
-    0px 4px 4px 0px var(--gray-shadow);
-
-  &:hover,
-  &:focus-visible {
-    background: linear-gradient(100deg, var(--orange) 0%, var(--yellow-200) 100%);
-    box-shadow: 0px 4px 4px 0px var(--yellow-shadow-200),
-      0px 4px 4px 0px var(--gray-shadow);
-  }
-    
-  &:hover .text,
-  &:focus-visible .text {
-    color: var(--black);
-    text-shadow: 4px 4px 4px var(--black-shadow);
-  }
-
-  &:active {
-    background: linear-gradient(100deg, var(--yellow-200) 0%, var(--orange) 100%);
-    box-shadow: 0px 4px 4px 0px var(--orange-shadow),
-      0px 4px 4px 0px var(--gray-shadow);
-  }
-}
-
-.dark-mode #main #rights .list .card .text {
-  color: var(--white);
-  text-shadow: 4px 4px 4px var(--white-shadow), 4px 4px 4px var(--gray-shadow);
-}
-
 .dark-mode #main #rights .list hr {
   border-color: var(--yellow-200);
   box-shadow: 0px 4px 4px 0px var(--yellow-shadow-200),
