@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- google tag manager -->
     <script defer>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -15,7 +15,7 @@
       })(window, document, "script", "dataLayer", "GTM-WHT2VXZ2");
     </script>
 
-    <!-- Meta tags -->
+    <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coletive Não-Binárie da Paraíba</title>
@@ -28,7 +28,7 @@
     <meta name="googlebot" content="index, follow" />
     <meta name="color-scheme" content="light dark" />
 
-    <!-- Open Graph / Redes sociais -->
+    <!-- open graph / social media -->
     <meta property="og:type" content="non_profit" />
     <meta property="og:title" content="Coletive Não-Binárie da Paraíba" />
     <meta
@@ -64,7 +64,7 @@
     />
     <link rel="canonical" href="https://coletivenaobinariepb.com.br">
 
-    <!-- Favicons -->
+    <!-- favicons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -110,14 +110,14 @@
       onload="this.media='all'"
     />
 
-    <!-- Fontes de ícone -->
+    <!-- icon fonts -->
     <script
       src="https://kit.fontawesome.com/ff50ed4701.js"
       crossorigin="anonymous"
       defer
     ></script>
 
-    <!-- Google tag (gtag.js) -->
+    <!-- google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-RX5TYLV2CB"
@@ -131,17 +131,18 @@
       gtag("config", "G-RX5TYLV2CB");
     </script>
 
-    <!-- JavaScript -->
+    <!-- JS -->
     <script src="js/load.js" defer></script>
     <script src="js/menu.js" defer></script>
-    <script src="js/tema-cores.js" defer></script>
-    <script src="js/ilustracoes.js" defer></script>
-    <script src="js/btn-mapeamento.js" defer></script>
+    <script src="js/color-theme.js" defer></script>
+    <script src="js/img-carousel.js" defer></script>
+    <script src="js/mapping-btn.js" defer></script>
+    <script src="js/copy-pix.js" defer></script>
     <script src="js/topo.js" defer></script>
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
+    <!-- google tag manager (noscript) -->
     <noscript>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-WHT2VXZ2"
@@ -151,7 +152,7 @@
       ></iframe>
     </noscript>
 
-    <!-- Tela de carregamento -->
+    <!-- load screen -->
     <div
       id="load"
       role="status"
@@ -185,8 +186,8 @@
       </figure>
     </div>
 
-    <!-- Conteúdo visível -->
-    <header id="cabecalho" style="display: none">
+    <!-- visible content -->
+    <header id="header" style="display: none">
       <figure class="logo">
         <img
           src="img/logo.avif"
@@ -198,7 +199,7 @@
         />
       </figure>
 
-      <!-- Mobile menu -->
+      <!-- mobile menu -->
       <button
         class="fa-solid fa-bars menu-icon"
         id="menu-icon"
@@ -206,10 +207,10 @@
       ></button>
 
       <dialog id="modal-container" aria-modal="false">
-        <div id="transparencia"></div>
+        <div id="backdrop"></div>
 
         <section id="menu">
-          <h3 class="titulo">Navegação</h3>
+          <h3 class="title">Seções</h3>
 
           <hr />
 
@@ -217,7 +218,7 @@
             <ul class="menu" role="menubar">
               <li class="link" role="none">
                 <a
-                  href="#finalidades"
+                  href="#objectives"
                   aria-label="Ir à seção de finalidades"
                   role="menuitem"
                 >
@@ -227,7 +228,7 @@
 
               <li class="link" role="none">
                 <a
-                  href="#atividades"
+                  href="#activities"
                   aria-label="Ir à seção de atividades"
                   role="menuitem"
                 >
@@ -237,7 +238,7 @@
 
               <li class="link" role="none">
                 <a
-                  href="#membres"
+                  href="#members"
                   aria-label="Ir à seção de membres"
                   role="menuitem"
                 >
@@ -247,7 +248,17 @@
 
               <li class="link" role="none">
                 <a
-                  href="#parceires"
+                  href="#informational-materials"
+                  aria-label="Ir à seção de materiais informativos"
+                  role="menuitem"
+                >
+                  Materiais informativos
+                </a>
+              </li>
+
+              <li class="link" role="none">
+                <a
+                  href="#partners"
                   aria-label="Ir à seção de parceires"
                   role="menuitem"
                 >
@@ -257,7 +268,7 @@
 
               <li class="link" role="none">
                 <a
-                  href="#direitos"
+                  href="#rights"
                   aria-label="Ir à seção de direitos"
                   role="menuitem"
                 >
@@ -265,9 +276,19 @@
                 </a>
               </li>
 
+              <!-- <li class="link" role="none">
+                <a
+                  href="#donation"
+                  aria-label="Ir à seção de Doação"
+                  role="menuitem"
+                >
+                  Doação
+                </a>
+              </li> -->
+
               <li class="link" role="none">
                 <a
-                  href="#rodape"
+                  href="#footer"
                   aria-label="Ir à seção de nossos contatos"
                   role="menuitem"
                 >
@@ -275,9 +296,9 @@
                 </a>
               </li>
 
-              <li class="link-principal" role="none">
+              <li class="main-link" role="none">
                 <a
-                  href="#mapeamento"
+                  href="#mapping"
                   aria-label="Ir à seção sobre o nosso mapeamento"
                   role="menuitem"
                 >
@@ -316,19 +337,19 @@
               />
 
               <label for="mobile-dark" title="Tema escuro">
-                <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
+                <i class="fa-solid fa-moon icon" aria-hidden="true"></i>
               </label>
             </div>
           </div>
         </section>
       </dialog>
 
-      <!-- Desktop menu -->
+      <!-- desktop menu -->
       <nav class="nav-desktop">
         <ul class="menu" role="menu">
           <li class="link" role="none">
             <a
-              href="#finalidades"
+              href="#objectives"
               aria-label="Ir à seção de finalidades"
               role="menuitem"
             >
@@ -338,7 +359,7 @@
 
           <li class="link" role="none">
             <a
-              href="#atividades"
+              href="#activities"
               aria-label="Ir à seção de atividades"
               role="menuitem"
             >
@@ -348,7 +369,7 @@
 
           <li class="link" role="none">
             <a
-              href="#membres"
+              href="#members"
               aria-label="Ir à seção de membres"
               role="menuitem"
             >
@@ -370,7 +391,17 @@
             <ul class="dropdown-content" id="dropdown-content" role="menu">
               <li class="link" role="none">
                 <a
-                  href="#parceires"
+                  href="#informational-materials"
+                  aria-label="Ir à seção de materiais informativos"
+                  role="menuitem"
+                >
+                  Materiais informativos
+                </a>
+              </li>
+
+              <li class="link" role="none">
+                <a
+                  href="#partners"
                   aria-label="Ir à seção de parceires"
                   role="menuitem"
                 >
@@ -380,7 +411,7 @@
 
               <li class="link" role="none">
                 <a
-                  href="#direitos"
+                  href="#rights"
                   aria-label="Ir à seção de direitos"
                   role="menuitem"
                 >
@@ -388,9 +419,19 @@
                 </a>
               </li>
 
+              <!-- <li class="link" role="none">
+                <a
+                  href="#donation"
+                  aria-label="Ir à seção de Doação"
+                  role="menuitem"
+                >
+                  Doação
+                </a>
+              </li> -->
+
               <li class="link" role="none">
                 <a
-                  href="#rodape"
+                  href="#footer"
                   aria-label="Ir à seção de nossos contatos"
                   role="menuitem"
                 >
@@ -435,16 +476,16 @@
                     aria-label="Alterar tema de cores para escuro"
                     tabindex="0"
                   >
-                    <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
+                    <i class="fa-solid fa-moon icon" aria-hidden="true"></i>
                   </label>
                 </div>
               </li>
             </ul>
           </li>
 
-          <li class="link-principal" role="none">
+          <li class="main-link" role="none">
             <a
-              href="#mapeamento"
+              href="#mapping"
               aria-label="Ir à seção sobre o nosso mapeamento"
               role="menuitem"
             >
@@ -455,9 +496,9 @@
       </nav>
     </header>
 
-    <main id="conteudo" style="display: none">
-      <section id="introducao">
-        <figure class="ilustracao">
+    <main id="main" style="display: none">
+      <section id="hero">
+        <figure class="figure">
           <img
             src="img/populacao-nb.avif"
             alt="População não-binária unida!"
@@ -468,7 +509,7 @@
           />
         </figure>
 
-        <h1 class="frase-efeito">
+        <h1 class="text">
           <span>Coletividade des</span>
 
           <strong>não-bináries</strong>
@@ -477,11 +518,11 @@
         </h1>
       </section>
 
-      <section id="finalidades">
-        <div class="textos">
-          <h2 class="titulo">Nossas Finalidades</h2>
+      <section id="objectives">
+        <div class="texts">
+          <h2 class="title">Nossas Finalidades</h2>
 
-          <ul class="lista">
+          <ul class="list">
             <li>
               <strong>Refletir e visibilizar as vivências das pessoas não-binárias</strong> no nosso estado como estratégia de cuidado, resistência e conquista de direitos
             </li>
@@ -491,12 +532,12 @@
             </li>
 
             <li>
-              <strong>Combater cotidianamente LGBTQIAPNB+misia</strong>, misoginia, racismo, capacitismo, extermínio dos povos quilombolas, periféricos e originários de diversas etnias, e demais violências na sociedade
+              <strong>Combater cotidianamente <abbr title="Preconceito e ódio contra a comunidade LGBTQIAPNB+, com o sufixo -misia no lugar de -fobia">LGBTQIAPNB+misia</abbr></strong>, misoginia, racismo, capacitismo, extermínio dos povos quilombolas, periféricos e originários de diversas etnias, e demais violências na sociedade
             </li>
           </ul>
         </div>
 
-        <figure class="img">
+        <figure class="figure">
           <picture>
             <source
               media="(min-width: 1200px)"
@@ -515,11 +556,11 @@
         </figure>
       </section>
 
-      <section id="atividades">
-        <h2 class="titulo">Nossas Atividades</h2>
+      <section id="activities">
+        <h2 class="title">Nossas Atividades</h2>
 
-        <ul class="lista">
-          <li class="atividade">
+        <ul class="list">
+          <li class="item">
             <hr />
 
             <p>
@@ -527,7 +568,7 @@
             </p>
           </li>
 
-          <li class="atividade">
+          <li class="item">
             <hr />
 
             <p>
@@ -535,7 +576,7 @@
             </p>
           </li>
 
-          <li class="atividade">
+          <li class="item">
             <hr />
 
             <p>
@@ -543,7 +584,7 @@
             </p>
           </li>
 
-          <li class="atividade">
+          <li class="item">
             <hr />
 
             <p>
@@ -552,17 +593,17 @@
           </li>
         </ul>
 
-        <article class="ilustracoes">
+        <article class="img-carousel">
           <hr />
 
           <div 
-            class="imgs-container"
+            class="img-container"
             tabindex="0"
             role="region"
             aria-roledescription="carousel"
             aria-label="Carrosel de imagens sobre algumas atividades que realizamos"
           >
-            <ul class="imgs">
+            <ul class="img-list">
               <li>
                 <figure>
                   <picture>
@@ -648,30 +689,30 @@
             </ul>
           </div>
 
-          <span class="aviso">
+          <span class="note">
             Arraste para o lado
-            <i class="fa-solid fa-arrows-left-right icone" aria-hidden="true"></i>
+            <i class="fa-solid fa-arrows-left-right icon" aria-hidden="true"></i>
           </span>
         </article>
       </section>
 
-      <section id="membres">
-        <section class="membres-geral">
-          <h2 class="frase-efeito">
+      <section id="members">
+        <section>
+          <h2 class="title">
             Interseccionalidade não-binária de vivências e experiências
           </h2>
 
-          <article class="ilustracoes">
+          <article class="img-carousel">
             <hr />
 
             <div
-              class="imgs-container"
+              class="img-container"
               tabindex="0"
               role="region"
               aria-roledescription="carousel"
               aria-label="Carrosel de imagens de nós mesmes em conjunto"
             >
-              <ul class="imgs">
+              <ul class="img-list">
                 <li>
                   <figure>
                     <picture>
@@ -757,27 +798,27 @@
               </ul>
             </div>
 
-            <span class="aviso">
+            <span class="note">
               Arraste para o lado
-              <i class="fa-solid fa-arrows-left-right icone" aria-hidden="true"></i>
+              <i class="fa-solid fa-arrows-left-right icon" aria-hidden="true"></i>
             </span>
           </article>
         </section>
 
-        <section class="diretories">
-          <h3 class="frase-efeito">Saiba quem são es diretories</h3>
+        <section class="directors">
+          <h3 class="title">Saiba quem são es diretories</h3>
 
-          <article class="ilustracoes">
+          <article class="img-carousel">
             <hr />
 
             <div
-              class="imgs-container"
+              class="img-container"
               tabindex="0"
               role="region"
               aria-roledescription="carousel"
               aria-label="Carrosel de imagens de cada diretore"
             >
-              <ul class="imgs">
+              <ul class="img-list">
                 <li>
                   <figure>
                     <picture>
@@ -853,29 +894,6 @@
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="img/d'angelles-diretoria-desktop.avif"
-                        type="image/avif"
-                      />
-
-                      <img
-                        src="img/d'angelles-diretoria-mobile.avif"
-                        alt="Foto de diretore D'Angelles"
-                        width="262"
-                        height="189"
-                        fetchpriority="low"
-                        loading="lazy"
-                      />
-                    </picture>
-
-                    <figcaption>D'Angelles Coutinho</figcaption>
-                  </figure>
-                </li>
-
-                <li>
-                  <figure>
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
                         srcset="img/lobo-diretoria-desktop.avif"
                         type="image/avif"
                       />
@@ -896,20 +914,127 @@
               </ul>
             </div>
 
-            <span class="aviso">
+            <span class="note">
               Arraste para o lado
-              <i class="fa-solid fa-arrows-left-right icone" aria-hidden="true"></i>
+              <i class="fa-solid fa-arrows-left-right icon" aria-hidden="true"></i>
             </span>
+          </article>
+        </section>
+
+        <section class="presentation">
+          <h3 class="title">Conheça mais sobre o Coletive</h3>
+
+          <article class="img-carousel">
+            <hr />
+
+            <iframe
+              class="video"
+              src="https://www.youtube.com/embed/IAeI-1iMS8c?si=Kg_disvtn43jGRTX"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              aria-label="Vídeo des diretories apresentando o Coletive"
+              allowfullscreen>
+            </iframe>
+
+            <a
+              href="downloads/apresentacao-coletive.pdf"
+              aria-label="Acesse a transcrição do vídeo em PDF"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+            >
+              <span class="text">Acessar transcrição do vídeo</span>
+
+              <i class="fa-solid fa-closed-captioning icon" aria-hidden="true"></i>
+            </a>
           </article>
         </section>
       </section>
 
-      <section id="parceires">
-        <h2 class="titulo">Conheça Nosses Parceires</h2>
+      <section id="informational-materials">
+        <h2 class="title">Aprenda mais com os nossos materiais informativos</h2>
 
-        <div class="parceires">
-          <article class="parceire">
-            <figure class="img">
+        <ul class="list">
+          <li class="item">
+            <a
+              href="https://youtu.be/AyfP6bHeP1k"
+              aria-label="Vídeo do Coletive no YouTube explicando a comunidade LGBTQIAPNB+"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card"
+            >
+              <i
+                class="fa-brands fa-youtube icon"
+                aria-hidden="true"
+              ></i>
+
+              <span class="text">Explicando cada letra da comunidade LGBTQIAPNB+</span>
+
+              <figure class="figure">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="img/explicacao-comunidade-lgbtqiapnb-desktop.avif"
+                    type="image/avif"
+                  />
+
+                  <img
+                    src="img/explicacao-comunidade-lgbtqiapnb-mobile.avif"
+                    alt="Capa do vídeo do Coletive"
+                    width="280"
+                    height="157"
+                    loading="lazy"
+                  />
+                </picture>
+              </figure>
+            </a>
+          </li>
+
+          <li class="item">
+            <a
+              href="downloads/artigo-coletive.pdf"
+              aria-label="Acesse o artigo do Coletive em PDF"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card"
+            >
+              <i
+                class="fa-solid fa-file-lines icon"
+                aria-hidden="true"
+              ></i>
+
+              <span class="text">A práxis nos movimentos sociais: reflexões sobre a atuação do Coletive</span>
+
+              <figure class="figure">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="img/artigo-coletive-desktop.avif"
+                    type="image/avif"
+                  />
+
+                  <img
+                    src="img/artigo-coletive-mobile.avif"
+                    alt="Capa do artigo do Coletive"
+                    width="280"
+                    height="157"
+                    loading="lazy"
+                  />
+                </picture>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="partners">
+        <h2 class="title">Conheça Nosses Parceires</h2>
+
+        <ul class="list">
+          <li class="item">
+            <figure class="figure">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -927,7 +1052,7 @@
               </picture>
             </figure>
 
-            <div class="texto">
+            <div class="text">
               <p>
                 A <strong>Articulação Brasileira Não-Binárie (ABRANB)</strong> é uma rede nacional em que estamos vinculades e contribuindo ativamente para o <strong>fortalecimento das causas não-binárias</strong>.
               </p>
@@ -941,15 +1066,15 @@
                 <span> Saber Mais Sobre <strong>ABRANB</strong> </span>
 
                 <i
-                  class="fa-solid fa-arrow-up-right-from-square icone"
+                  class="fa-solid fa-arrow-up-right-from-square icon"
                   aria-hidden="true"
                 ></i>
               </a>
             </div>
-          </article>
+          </li>
 
-          <article class="parceire">
-            <figure class="img">
+          <li class="item">
+            <figure class="figure">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -967,7 +1092,7 @@
               </picture>
             </figure>
 
-            <div class="texto">
+            <div class="text">
               <p>
                 O <strong>Fundo Brasil</strong> é uma fundação independente que <strong>nos apoiou em um dos nossos projetos com recurso</strong> ao passar no edital.
               </p>
@@ -981,18 +1106,18 @@
                 <span> Saber Mais Sobre <strong>Fundo Brasil</strong> </span>
 
                 <i
-                  class="fa-solid fa-arrow-up-right-from-square icone"
+                  class="fa-solid fa-arrow-up-right-from-square icon"
                   aria-hidden="true"
                 ></i>
               </a>
             </div>
-          </article>
-        </div>
+          </li>
+        </ul>
       </section>
 
-      <section id="mapeamento">
-        <div class="textos">
-          <h2 class="titulo">Vem somar com a gente!</h2>
+      <section id="mapping">
+        <div class="texts">
+          <h2 class="title">Vem somar com a gente!</h2>
 
           <p>
             Estamos <strong>mapeando pessoas não-binárias</strong> que moram na <strong>Paraíba</strong> para <strong>fortalecer a nossa rede</strong> e lutar para <strong>proteger e conquistar os nossos direitos urgentes</strong>, como trabalho digno, saúde e educação inclusiva. <strong>Você também pode contribuir com a nossa força</strong>. Vamos juntes!
@@ -1004,21 +1129,21 @@
               aria-label="Ir ao formulário de mapeamento no Google Forms"
               target="_blank"
               rel="noopener noreferrer"
-              id="btn-mapeamento"
+              id="mapping-btn"
             >
               <i
-                class="fa-brands fa-wpforms icone"
+                class="fa-brands fa-wpforms icon"
                 aria-hidden="true"
               ></i>
 
               <span>Mapeie-se</span>
             </a>
 
-            <span class="aviso">Leva de 2 a 5 minutos</span>
+            <span class="note">Leva de 2 a 5 minutos</span>
           </div>
         </div>
 
-        <figure class="img">
+        <figure class="figure">
           <picture>
             <source
               media="(min-width: 1200px)"
@@ -1037,12 +1162,12 @@
         </figure>
       </section>
 
-      <section id="direitos">
-        <h2 class="frase-efeito">
+      <section id="rights">
+        <h2 class="title">
           Conheça os nossos direitos já conquistados
         </h2>
 
-        <div class="direitos">
+        <div class="list">
           <a
             href="https://mpvirtual.mppb.mp.br/public/validacao/9ca043b6dfb560a3f8f98f3b8ec6e728"
             aria-label="Ir à página de acesso ao provimento de direitos"
@@ -1050,7 +1175,11 @@
             rel="noopener noreferrer"
             class="card"
           >
-            <figure class="img">
+            <span class="text">
+              Provimento que garante o direito à retificação de prenome e de gênero nos documentos
+            </span>
+
+            <figure class="figure">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -1067,10 +1196,6 @@
                 />
               </picture>
             </figure>
-
-            <span class="texto">
-              Provimento que garante o direito à retificação de prenome e de gênero nos documentos
-            </span>
           </a>
 
           <hr />
@@ -1082,7 +1207,11 @@
             rel="noopener noreferrer"
             class="card"
           >
-            <figure class="img">
+            <span class="text">
+              Resolução do CFM que amplia o acesso ao atendimento de pessoas cisdissidentes
+            </span>
+
+            <figure class="figure">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -1099,55 +1228,108 @@
                 />
               </picture>
             </figure>
-
-            <span class="texto">
-              Resolução do CFM que amplia o acesso ao atendimento de pessoas cisdissidentes
-            </span>
           </a>
         </div>
+
+        <aside id="municipal-council">
+          <div class="texts">
+            <h2 class="title">E falando em direitos ...</h2>
+
+            <p>
+              Fazemos parte do <strong>Conselho Municipal LGBTQIAPNB+ de João Pessoa</strong>, então podemos participar do controle e da implementação de políticas públicas para a nossa população.
+            </p>
+
+            <a
+              href="https://www.instagram.com/conselholgbtjp/"
+              aria-label="Ir ao perfil do Conselho no Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Saber Mais Sobre Esse <strong>Conselho</strong></span>
+
+              <i
+                class="fa-solid fa-arrow-up-right-from-square icon"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+
+          <figure class="figure">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/conselho-municipal-cnb-desktop.avif"
+                type="image/avif"
+              />
+
+              <img
+                src="img/conselho-municipal-cnb-mobile.avif"
+                alt="Coletive Não-Binárie da Paraíba dentro do Conselho Municipal LGBTQIAPNb+ de João Pessoa"
+                width="315"
+                height="209"
+                loading="lazy"
+              />
+            </picture>
+          </figure>
+        </aside>
       </section>
 
-      <aside id="conselho-municipal">
-        <div class="textos">
-          <h2 class="titulo">E Falando em direitos ...</h2>
+      <!-- <section id="donation">
+        <div class="texts">
+          <h2 class="title">Nos ajude com qualquer valor</h2>
 
           <p>
-            Fazemos parte do <strong>Conselho Municipal LGBTQIAPNB+ de João Pessoa</strong>, então podemos participar do controle e da implementação de políticas públicas para a nossa população.
+            Apoiar financeiramente também é uma forma de sustentar a luta não-binária no nosso movimento, desde centavos até reais. Cada doação ajuda a <strong>viabilizar nossas ações nos territórios</strong>, <strong>manter o funcionamento do Coletive</strong> e <strong>garantir que o nosso CNPJ e site continuem ativos</strong>.
           </p>
 
-          <a
-            href="https://www.instagram.com/conselholgbtjp/"
-            aria-label="Ir ao perfil do Conselho no Instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>Saber Mais Sobre Esse <strong>Conselho</strong></span>
+          <div class="payment">
+            <figure class="qr-code">
+              <img
+                src="img/qr-code-light.png"
+                alt="QR Code da nossa chave pix"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </figure>
 
-            <i
-              class="fa-solid fa-arrow-up-right-from-square icone"
-              aria-hidden="true"
-            ></i>
-          </a>
+            <div class="pix-key">
+              <span class="note">
+                Copiar chave pix:
+              </span>
+
+              <button
+                id="copy-pix"
+                aria-label="Botão para copiar a chave pix para a área de transferência"
+                title="Copiar chave pix"
+              >
+                <i class="fa-solid fa-copy icon" aria-hidden="true"></i>
+
+                <span class="text">99.999.999/9999-99</span>
+              </button>
+
+              // screen reader only
+              <span
+                id="copy-feedback"
+                class="sr-only"
+                aria-live="polite"
+                role="status"
+              ></span>
+            </div>
+          </div>
         </div>
 
-        <figure class="img">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="img/conselho-municipal-cnb-desktop.avif"
-              type="image/avif"
-            />
-
-            <img
-              src="img/conselho-municipal-cnb-mobile.avif"
-              alt="Coletive Não-Binárie da Paraíba dentro do Conselho Municipal LGBTQIAPNb+ de João Pessoa"
-              width="315"
-              height="209"
-              loading="lazy"
-            />
-          </picture>
+        <figure class="figure">
+          <img
+            src="img/doacao-light.avif"
+            alt=""
+            class="light-img"
+            width="315"
+            height="318"
+            loading="lazy"
+          />
         </figure>
-      </aside>
+      </section> -->
 
       <button
         class="fa-solid fa-turn-up"
@@ -1157,7 +1339,7 @@
       ></button>
     </main>
 
-    <footer id="rodape" style="display: none">
+    <footer id="footer" style="display: none">
       <div class="main-content">
         <figure class="logo">
           <img
@@ -1170,12 +1352,12 @@
         </figure>
 
         <div class="link-lists">
-          <section class="contatos">
+          <section class="contacts">
             <article class="card-tell">
-              <h3 class="titulo">
-                <span class="texto">Nossos Contatos</span>
+              <h3 class="title">
+                <span class="text">Nossos Contatos</span>
 
-                <i class="fa-solid fa-message icone" aria-hidden="true"></i>
+                <i class="fa-solid fa-message icon" aria-hidden="true"></i>
               </h3>
 
               <ul class="tells">
@@ -1188,11 +1370,11 @@
                     class="tell"
                   >
                     <i
-                      class="fa-brands fa-instagram icone"
+                      class="fa-brands fa-instagram icon"
                       aria-hidden="true"
                     ></i>
 
-                    <span class="texto"> @coletivenaobinariepb </span>
+                    <span class="text"> @coletivenaobinariepb </span>
                   </a>
                 </li>
 
@@ -1204,13 +1386,13 @@
                     rel="noopener noreferrer"
                     class="tell"
                   >
-                    <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
+                    <i class="fa-solid fa-envelope icon" aria-hidden="true"></i>
 
-                    <span class="texto mobile">
+                    <span class="text mobile">
                       coletivenaobinariepb <br> @gmail.com
                     </span>
 
-                    <span class="texto desktop">
+                    <span class="text desktop">
                       coletivenaobinariepb@gmail.com
                     </span>
                   </a>
@@ -1221,10 +1403,10 @@
             <hr>
 
             <article class="card-tell">
-              <h4 class="titulo">
-                <span class="texto">Desenvolvedore Web</span>
+              <h4 class="title">
+                <span class="text">Desenvolvedore Web</span>
 
-                <i class="fa-solid fa-code icone" aria-hidden="true"></i>
+                <i class="fa-solid fa-code icon" aria-hidden="true"></i>
               </h4>
 
               <ul class="tells">
@@ -1236,8 +1418,8 @@
                     rel="noopener noreferrer"
                     class="tell"
                   >
-                    <i class="fa-solid fa-address-book icone" aria-hidden="true"></i>
-                    <span class="texto"> Enne Jim Pessoa </span>
+                    <i class="fa-solid fa-address-book icon" aria-hidden="true"></i>
+                    <span class="text"> Enne Jim Pessoa </span>
                   </a>
                 </li>
 
@@ -1249,19 +1431,19 @@
                     rel="noopener noreferrer"
                     class="tell"
                   >
-                    <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
-                    <span class="texto"> Enne.Pessoa@gmail.com </span>
+                    <i class="fa-solid fa-envelope icon" aria-hidden="true"></i>
+                    <span class="text"> Enne.Pessoa@gmail.com </span>
                   </a>
                 </li>
               </ul>
             </article>
           </section>
 
-          <section class="pesquisas">
-            <h4 class="titulo">
-              <span class="texto">Fontes de Pesquisa</span>
+          <section class="research">
+            <h4 class="title">
+              <span class="text">Fontes de Pesquisa</span>
 
-              <i class="fa-solid fa-search icone" aria-hidden="true"></i>
+              <i class="fa-solid fa-search icon" aria-hidden="true"></i>
             </h4>
 
             <ul class="fonts">
@@ -1273,9 +1455,9 @@
                   rel="noopener noreferrer"
                   class="font"
                 >
-                  <i class="fa-solid fa-globe icone" aria-hidden="true"></i>
+                  <i class="fa-solid fa-globe icon" aria-hidden="true"></i>
 
-                  <span class="texto"> Abrai </span>
+                  <span class="text"> Abrai </span>
                 </a>
               </li>
 
@@ -1287,9 +1469,9 @@
                   rel="noopener noreferrer"
                   class="font"
                 >
-                  <i class="fa-solid fa-globe icone" aria-hidden="true"></i>
+                  <i class="fa-solid fa-globe icon" aria-hidden="true"></i>
 
-                  <span class="texto"> Orientando </span>
+                  <span class="text"> Orientando </span>
                 </a>
               </li>
             </ul>
@@ -1298,32 +1480,32 @@
       </div>
 
       <article class="tells-emergencia">
-        <p class="texto">
+        <p class="text">
           Em caso de violência ou preconceito, <strong>NÃO SE CALE!</strong>
         </p>
 
         <ul class="tells">
           <li>
-            <a 
-              href="tel:100"
-              aria-label="ligar para 100"
-              class="tell"
-            >
-              <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
-
-              <span> Direitos Humanos <strong>Nacional (100)</strong> </span>
-            </a>
-          </li>
-
-          <li>
-            <a 
+            <a
               href="tel:155" 
               aria-label="ligar para 155" 
               class="tell"
             >
-              <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
+              <i class="fa-solid fa-phone icon" aria-hidden="true"></i>
 
               <span> Direitos Humanos <strong>Estadual (155)</strong> </span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="tel:100"
+              aria-label="ligar para 100"
+              class="tell"
+            >
+              <i class="fa-solid fa-phone icon" aria-hidden="true"></i>
+
+              <span> Direitos Humanos <strong>Nacional (100)</strong> </span>
             </a>
           </li>
         </ul>
@@ -1333,7 +1515,7 @@
         <strong>Coletive Não-Binárie da Paraíba</strong> © 2026 | Vamos construir um mundo mais colorido 🌈
       </p>
 
-      <figure class="img">
+      <figure class="figure">
         <img
           src="img/baleia.avif"
           alt=""

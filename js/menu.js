@@ -1,10 +1,10 @@
-// Abrir o menu
-// Chamando a tag com uma constante
+// open menu
+// variables
 const menu_icon = document.getElementById("menu-icon");
 const modal_container = document.getElementById("modal-container");
 const nav = document.querySelectorAll(".nav .menu a");
 
-// Aplicando a função de abrir o menu
+// function
 menu_icon.addEventListener("click", () => {
   if ((modal_container.style.display = "none")) {
     modal_container.style.display = "block";
@@ -13,13 +13,13 @@ menu_icon.addEventListener("click", () => {
   }
 });
 
-// Sair do menu
-// Chamada da tag por ID
-const transparencia = window.document.querySelector("#transparencia");
+// close menu
+// variaable
+const backdrop = window.document.querySelector("#backdrop");
 
-// Aplicando função de sair do menu
+// function
 if (innerWidth <= 1200) {
-  transparencia.addEventListener("click", () => {
+  backdrop.addEventListener("click", () => {
     modal_container.style.display = "none";
     modal_container.close();
     modal_container.setAttribute("aria-modal", "false");
@@ -34,27 +34,27 @@ if (innerWidth <= 1200) {
   });
 }
 
-// Acesso ao dropdown do menu desktop
+// dropdown of desktop menu
 const dropdown = document.querySelector("#dropdown");
 const dropdownContent = document.querySelector("#dropdown-content");
 const dropdownIcon = document.querySelector("#dropdown-icon");
 
-// Regras para mostrar ou esconder o dropdown
+// rules to show or hide dropdown
 function toggleDropdown(forceClose = false) {
   const isVisible = dropdownContent.style.display === "flex";
 
   if (forceClose || isVisible) {
     dropdownContent.style.display = "none";
     dropdownIcon.setAttribute("aria-expanded", "false");
-    dropdownIcon.style.color = "var(--amarela)";
+    dropdownIcon.style.color = "var(--yellow-200)";
   } else {
     dropdownContent.style.display = "flex";
     dropdownIcon.setAttribute("aria-expanded", "true");
-    dropdownIcon.style.color = "var(--laranja)";
+    dropdownIcon.style.color = "var(--orange)";
   }
 }
 
-// Abrir com Enter ou Espaço
+// open with enter ou space key
 dropdownIcon.addEventListener("keydown", (tecla) => {
   if (tecla.key === "Enter" || tecla.key === " ") {
     tecla.preventDefault();
@@ -65,20 +65,20 @@ dropdownIcon.addEventListener("keydown", (tecla) => {
   }
 });
 
-// Abrir e fechar via mouse
+// open and close via mouse
 dropdown.addEventListener("mouseenter", () => toggleDropdown());
 dropdown.addEventListener("mouseleave", () => toggleDropdown(true));
 
-// Fechar o dropdown se clicar fora
+// close dropdown if click outside
 document.addEventListener("click", (e) => {
   if (!document.querySelector("#dropdown").contains(e.target)) {
     toggleDropdown(true);
   }
 });
 
-// Fechar o menu se perder o foco
+// close menu if lose focus
 dropdownContent.addEventListener("focusout", () => {
-  // Verifica se o novo foco está fora do dropdown
+  // check if new focus is out of dropdown
   setTimeout(() => {
     if (!dropdownContent.contains(document.activeElement)) {
       toggleDropdown(true);

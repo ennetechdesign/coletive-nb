@@ -1,7 +1,7 @@
 const load = document.querySelector("#load")
-const header = document.querySelector("#cabecalho")
-const main = document.querySelector("#conteudo")
-const footer = document.querySelector("#rodape")
+const header = document.querySelector("#header")
+const main = document.querySelector("#main")
+const footer = document.querySelector("#footer")
 
 window.addEventListener("load", () => {
   document.querySelector("body").style.animation = "aparecer 0.5s ease-out"

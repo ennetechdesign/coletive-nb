@@ -5,40 +5,40 @@
     font-size: 1vw;
   }
 
-  #cabecalho .menu-icon {
+  #header .menu-icon {
     display: none;
   }
-  #cabecalho .nav-desktop,
-  #cabecalho .nav-desktop .menu {
+  #header .nav-desktop,
+  #header .nav-desktop .menu {
     display: flex;
   }
-  #cabecalho .nav-desktop .menu .link {
+  #header .nav-desktop .menu .link {
+    padding: 15px;
+  }
+  #header .nav-desktop .menu .link a {
     padding: 15px 0;
   }
-  #cabecalho .nav-desktop .menu .link a {
-    padding: 15px 20px;
-  }
-  #cabecalho .nav-desktop .menu .dropdown {
+  #header .nav-desktop .menu .dropdown {
     position: relative;
     display: inline-block;
     margin: auto;
 
     &:hover .dropdown-icon {
-      color: var(--laranja);
+      color: var(--orange);
     }
     
     &:hover .dropdown-content {
       display: flex;
     }
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
+  #header .nav-desktop .menu .dropdown .dropdown-icon {
     display: inline-block;
-    color: var(--amarela);
+    color: var(--yellow-200);
     padding: 0 45px 0 18px;
     border-radius: 1em;
     cursor: default;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
+  #header .nav-desktop .menu .dropdown .dropdown-content {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -46,220 +46,215 @@
     left: 80%;
     background: radial-gradient(
       50% 50% at 50% 50%,
-      var(--cinza) 0%,
-      var(--preta) 100%
+      var(--gray) 0%,
+      var(--black) 100%
     );
-    box-shadow: 0px 4px 4px 0px var(--sombra-preta);
+    box-shadow: 0px 4px 4px 0px var(--black-shadow);
     border-radius: 30px;
-    border: 1.5px dashed var(--branca);
+    border: 1.5px dashed var(--white);
     padding: 1em;
     z-index: 1;
     animation: cima 0.2s ease-out;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors {
+  #header .nav-desktop .menu .dropdown .dropdown-content .btn-colors {
     margin: 1.5em auto;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label {
+  #header .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label {
     padding: 12px;
     padding-top: 16px;
     cursor: pointer;
     transition: 0.2s;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label .fa-solid {
+  #header .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label .fa-solid {
     font-size: 1.4em;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:hover,
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:focus-visible {
+  #header .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:hover,
+  #header .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:focus-visible {
     background-color: #F2E5301A;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:hover,
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:focus-visible {
+  #header .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:hover,
+  #header .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:focus-visible {
     background-color: #6A4EA633;
   }
-  #cabecalho .nav-desktop .menu .link-principal {
+  #header .nav-desktop .menu .main-link {
     padding: 15px 0;
   }
-  #cabecalho .nav-desktop .menu .link-principal a {
-    color: var(--cinza);
+  #header .nav-desktop .menu .main-link a {
+    color: var(--gray);
   }
 
-  #conteudo #introducao {
+  #main #hero {
     background-image: url(../img/fundo-roxo-desktop.png);
     flex-direction: row;
     justify-content: center;
     padding: 4em 0;
     gap: 10em;
   }
-  #conteudo #introducao .frase-efeito {
+  #main #hero .text {
     letter-spacing: 1.8px;
   }
 
-  #conteudo #finalidades,
-  #conteudo #mapeamento,
-  #conteudo #conselho-municipal {
-    align-items: flex-start;
-  }
-  #conteudo #finalidades,
-  #conteudo #conselho-municipal {
-    flex-direction: row-reverse;
-  }
-  #conteudo #mapeamento {
-    flex-direction: row;
-  }
-  #conteudo #finalidades .textos,
-  #conteudo #mapeamento .textos,
-  #conteudo #conselho-municipal .textos {
-    width: 597px;
-  }
-  #conteudo #finalidades .textos .titulo,
-  #conteudo #mapeamento .textos .titulo,
-  #conteudo #conselho-municipal .textos .titulo {
+  #main #objectives .texts .title,
+  #main #mapping .texts .title,
+  #main #municipal-council .texts .title {
     line-height: normal;
     max-width: 100%;
   }
-  #conteudo #finalidades .img,
-  #conteudo #mapeamento .img,
-  #conteudo #conselho-municipal .img {
-    width: 500px;
-  }
 
-  #conteudo #atividades,
-  #conteudo #parceires {
+  #main #activities,
+  #main #partners {
     gap: 6em;
   }
-  #conteudo #atividades .titulo,
-  #conteudo #parceires .titulo {
+  #main #activities .title,
+  #main #partners .title {
     padding: 28px 60px 20px 60px;
     line-height: normal;
     width: 90%;
   }
-  #conteudo #atividades .lista .atividade hr {
+  #main #activities .list .item hr {
     width: 80%;
   }
-  #conteudo #atividades .lista .atividade p {
+  #main #activities .list .item p {
     border-radius: 0px 0px 50px 50px;
     padding: 15px 25px 25px 25px;
     margin: auto;
   }
-  #conteudo #membres .ilustracoes .imgs,
-  #conteudo #atividades .ilustracoes .imgs {
+  #main #members .img-carousel .img-list,
+  #main #activities .img-carousel .img-list {
     gap: 10em;
   }
 
-  #conteudo #membres .frase-efeito,
-  #conteudo #direitos .frase-efeito {
+  #main #members .title,
+  #main #informational-materials .title,
+  #main #rights > .title {
     letter-spacing: 1.6px;
-    margin: auto 15%;
+  }
+  #main #members .presentation .img-carousel .link {
+    width: max-content;
   }
 
-  #conteudo #parceires .parceires {
+  #main #informational-materials,
+  #main #rights {
     gap: 5em;
   }
-  #conteudo #parceires .parceires .parceire {
+  #main #informational-materials .list .card {
+    border-radius: 40px;
+    padding-bottom: 0;
+    gap: 30px;
+  }
+  #main #informational-materials .list .item:nth-child(odd) .card {
+    flex-direction: row-reverse;
+    padding-right: 35px;
+  }
+  #main #informational-materials .list .item:nth-child(even) .card {
+    flex-direction: row;
+    padding-left: 35px;
+  }
+  #main #informational-materials .list .card .text {
+    margin: 0;
+  }
+
+  #main #partners .list {
+    gap: 5em;
+  }
+  #main #partners .list .item {
     flex-direction: row;
     align-items: center;
     gap: 4em;
   }
-  #conteudo #parceires .parceires .parceire:last-child {
+  #main #partners .list .item:last-child {
     flex-direction: row-reverse;
   }
-  #conteudo #parceires .parceires .parceire .texto a,
-  #conteudo #mapeamento .textos .btn-to-form a,
-  #conteudo #conselho-municipal .textos a {
+  #main #partners .list .item .text a,
+  #main #mapping .texts .btn-to-form a,
+  #main #municipal-council .texts a {
     width: fit-content;
     margin: auto;
   }
-  #conteudo #parceires .parceires .parceire .texto a,
-  #conteudo #conselho-municipal .textos a {
+  #main #members .presentation .img-carousel .link,
+  #main #partners .list .item .text a,
+  #main #municipal-council .texts a {
     gap: 10px;
   }
 
-  #conteudo #mapeamento .textos .btn-to-form {
-    align-items: end;
-    gap: 5px;
-    margin: 0.7em 0 0;
-  }
-  #conteudo #mapeamento .textos .btn-to-form a {
+  #main #mapping .texts .btn-to-form a {
     gap: 4px;
     padding-left: 30px;
   }
-  #conteudo #mapeamento .textos .btn-to-form a,
-  #conteudo #conselho-municipal .textos a {
+  #main #mapping .texts .btn-to-form a,
+  #main #municipal-council .texts a {
     max-width: fit-content;
   }
 
-  #conteudo #direitos {
-    gap: 5em;
-    padding: 100px 0 140px;
-  }
-  #conteudo #direitos .direitos {
+  #main #rights .list {
     width: 100%;
   }
-  #conteudo #direitos .frase-efeito {
-    margin: auto 0;
-    width: 500px;
-  }
-  #conteudo #direitos .direitos .card {
-    flex-direction: row;
+  #main #rights .list .card {
+    flex-direction: row-reverse;
     border-radius: 40px;
     width: 575px;
   }
-  #conteudo #direitos .direitos .card .texto {
+  #main #rights .list .card .text {
     width: 85%;
     margin: auto 1em;
+    text-align: left;
   }
 
-  #conteudo #conselho-municipal .textos .titulo {
-    width: 100%;
-  }
-  #conteudo #conselho-municipal .textos a {
+  #main #municipal-council .texts a {
     padding: 15px 35px;
-    margin: 0.7em 0 0.1em;
   }
 
-  #rodape {
+  #main #donation .texts .payment {
+    flex-direction: row;
+    gap: 30px;
+  }
+  #main #donation .texts .payment .pix-key {
+    align-items: baseline;
+  }
+
+  #footer {
     gap: 0em;
   }
-  #rodape .main-content {
+  #footer .main-content {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
   }
-  #rodape .link-lists {
+  #footer .link-lists {
     align-items: end;
   }
-  #rodape .contatos {
+  #footer .contacts {
     max-width: none;
     align-items: flex-end;
     z-index: 1;
   }
-  #rodape .contatos .card-tell,
-  #rodape .pesquisas {
+  #footer .contacts .card-tell,
+  #footer .research {
     max-width: fit-content;
     align-items: flex-end;
     gap: 8px;
   }
-  #rodape .contatos .card-tell .titulo {
+  #footer .contacts .card-tell .title {
     gap: 8px;
   }
-  #rodape .contatos .card-tell .tells .tell {
+  #footer .contacts .card-tell .tells .tell {
     gap: 8px;
   }
-  #rodape .contatos .card-tell .tells .tell .texto.mobile {
+  #footer .contacts .card-tell .tells .tell .text.mobile {
     display: none;
   }
-  #rodape .contatos .card-tell .tells .tell .texto.desktop {
+  #footer .contacts .card-tell .tells .tell .text.desktop {
     display: inline;
   }
-  #rodape .tells-emergencia {
+  #footer .tells-emergencia {
     gap: 0.5em;
     width: 100%;
   }
-  #rodape .tells-emergencia .texto {
+  #footer .tells-emergencia .text {
     max-width: 27vw;
   }
-  #rodape .copyright {
+  #footer .copyright {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -267,647 +262,805 @@
     padding: 0;
     margin-top: 100px;
   }
-  #rodape .img {
+  #footer .figure {
     margin-top: 15%;
   }
 }
 
-@media screen and (min-width: 1200px) and (orientation: landscape) { /* Desktop */
-  #cabecalho {
+@media screen and (min-width: 1200px) and (orientation: landscape) { /* desktop */
+  #header {
     padding: 10px 60px;
     padding-left: 40px;
   }
-  #cabecalho .logo {
+  #header .logo {
     width: 315px;
   }
-  #cabecalho .nav-desktop .menu a {
+  #header .nav-desktop .menu a {
     font-size: 24px;
     padding: 15px 20px;
   }
-  #cabecalho .nav-desktop .menu .dropdown {
+  #header .nav-desktop .menu .dropdown {
     padding-right: 2em;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
+  #header .nav-desktop .menu .dropdown .dropdown-icon {
     font-size: 2.4em;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
+  #header .nav-desktop .menu .dropdown .dropdown-content {
     border-radius: 30px;
-    margin-left: -150%;
+    margin-left: -165%;
   }
 
-  #conteudo #introducao .ilustracao {
-    width: 680px;
+  #main #hero .figure {
+    width: 600px;
   }
-  #conteudo #introducao .frase-efeito {
-    font-size: 36px;
-    line-height: 60px;
-    transform: translate(-20%, -22%);
+  #main #hero .text {
+    font-size: 40px;
+    line-height: 64px;
+    transform: translate(-15%, -18%);
   }
-  #conteudo #introducao .frase-efeito strong {
+  #main #hero .text strong {
     padding-top: 0.17em;
   }
 
-  #conteudo #finalidades {
+  #main #objectives {
     scroll-margin-top: calc(100vh - 650px);
   }
-
-  #conteudo #finalidades,
-  #conteudo #mapeamento,
-  #conteudo #conselho-municipal {
-    padding: 60px 30px;
-    gap: 5em;
+  #main #objectives,
+  #main #municipal-council {
+    flex-direction: row-reverse;
   }
-  #conteudo #finalidades .textos .titulo,
-  #conteudo #mapeamento .textos .titulo,
-  #conteudo #conselho-municipal .textos .titulo {
+  #main #objectives,
+  #main #mapping,
+  #main #donation {
+    padding: 60px 30px;
+  }
+  #main #objectives,
+  #main #mapping,
+  #main #municipal-council,
+  #main #donation {
+    align-items: flex-start;
+  }
+  #main #objectives .texts,
+  #main #mapping .texts,
+  #main #municipal-council .texts {
+    width: 597px;
+  }
+  #main #objectives .texts .title,
+  #main #activities .title,
+  #main #members .title,
+  #main #informational-materials .title,
+  #main #partners .title,
+  #main #mapping .texts .title,
+  #main #rights > .title,
+  #main #municipal-council .texts .title,
+  #main #donation .texts .title {
     font-size: 32px;
   }
-  #conteudo #finalidades .textos .lista {
+  #main #objectives .texts .list {
     padding-left: 36px;
   }
-  #conteudo #finalidades .textos .lista li,
-  #conteudo #mapeamento .textos p,
-  #conteudo #conselho-municipal .textos p {
+  #main #objectives .texts .list li,
+  #main #mapping .texts p,
+  #main #municipal-council .texts p,
+  #main #donation .texts p {
     font-size: 24px;
     line-height: 40px;
   }
-  #conteudo #finalidades .textos .lista li::before {
+  #main #objectives .texts .list li::before {
     left: -7%;
   }
-  #conteudo #finalidades .img img,
-  #conteudo #mapeamento .img img,
-  #conteudo #conselho-municipal .img img {
+  #main #objectives .img,
+  #main #mapping .img,
+  #main #municipal-council .figure {
+    width: 500px;
+  }
+  #main #objectives .figure img,
+  #main #mapping .figure img,
+  #main #municipal-council .figure img {
     border-radius: 40px;
   }
 
-  #conteudo #atividades .titulo,
-  #conteudo #parceires .titulo {
-    font-size: 32px;
-  }
-  #conteudo #atividades .lista .atividade p {
+  #main #activities .list .item p {
     font-size: 24px;
     line-height: 40px;
     width: 50%;
   }
-  #conteudo #atividades .lista .atividade:nth-child(odd) p {
+  #main #activities .list .item:nth-child(odd) p {
     transform: translateX(-100px);
   }
-  #conteudo #atividades .lista .atividade:nth-child(even) p {
+  #main #activities .list .item:nth-child(even) p {
     transform: translateX(100px);
   }
-  #conteudo #atividades .ilustracoes {
+  #main #activities .img-carousel {
     margin-top: auto;
   }
-  #conteudo #membres .ilustracoes hr,
-  #conteudo #atividades .ilustracoes hr {
+  #main #members .img-carousel hr,
+  #main #activities .img-carousel hr {
     transform: translateY(490%);
   }
-  #conteudo #membres .ilustracoes .imgs,
-  #conteudo #atividades .ilustracoes .imgs {
+  #main #members .img-carousel .img-list,
+  #main #activities .img-carousel .img-list {
     padding-left: calc(100vw - 67vw);
     padding-right: calc(100vw - 67vw);
   }
-  #conteudo #membres .ilustracoes .imgs figure,
-  #conteudo #atividades .ilustracoes .imgs figure {
+  #main #members .img-carousel .img-list figure,
+  #main #activities .img-carousel .img-list figure {
     border-radius: 2.7em;
     width: 33vw;
   }
-  #conteudo #membres .ilustracoes .imgs figure img,
-  #conteudo #atividades .ilustracoes .imgs figure img {
+  #main #members .img-carousel .img-list figure img,
+  #main #activities .img-carousel .img-list figure img {
     pointer-events: none;
     border-radius: 45px;
   }
-  #conteudo #membres .ilustracoes .aviso,
-  #conteudo #atividades .ilustracoes .aviso {
+  #main #members .img-carousel .note,
+  #main #activities .img-carousel .note {
     font-size: 18px;
   }
-  #conteudo #membres .ilustracoes .aviso .icone,
-  #conteudo #atividades .ilustracoes .aviso .icone {
+  #main #members .img-carousel .note .icon,
+  #main #activities .img-carousel .note .icon {
     margin-bottom: auto;
     margin-top: -1px;
   }
 
-  #conteudo #membres {
-    padding: 50px 0px 120px 0px;
+  #main #members {
+    padding: 50px 0px 100px 0px;
     gap: 80px;
   }
-  #conteudo #membres .frase-efeito,
-  #conteudo #direitos .frase-efeito {
-    font-size: 32px;
-    line-height: 55px;
-    letter-spacing: 1.6px;
-    margin: auto 9em;
+  #main #members .title {
+    width: 800px;
+    margin: auto;
   }
-  #conteudo #membres .diretories {
+  #main #members .title,
+  #main #informational-materials .title,
+  #main #rights > .title {
+    line-height: 55px;
+  }
+  #main #members .directors {
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
-  #conteudo #membres .diretories .ilustracoes hr {
+  #main #members .directors .img-carousel hr {
     transform: translateY(550%);
   }
-  #conteudo #membres .diretories .ilustracoes .imgs {
+  #main #members .directors .img-carousel .img-list {
     padding-left: calc(100vw - 62vw);
     padding-right: calc(100vw - 62vw);
   }
-  #conteudo #membres .diretories .ilustracoes .imgs figure {
+  #main #members .directors .img-carousel .img-list figure {
     border-radius: 2.9em;
     width: 23vw;
   }
-  #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
+  #main #members .directors .img-carousel .img-list figure figcaption {
     font-size: 24px;
     bottom: 2.4vh;
   }
+  #main #members .presentation .title {
+    margin: auto auto 5px;
+  }
+  #main #members .presentation .img-carousel hr {
+    transform: translateY(850%);
+  }
+  #main #members .presentation .img-carousel .video {
+    width: 900px;
+    height: 505px;
+    border-radius: 50px;
+  }
+  #main #members .presentation .img-carousel .link {
+    margin: 30px 51% 0;
+  }
+  #main #members .presentation .img-carousel .link,
+  #main #partners .list .item .text a,
+  #main #mapping .texts .btn-to-form a,
+  #main #municipal-council .texts a,
+  #main #donation .texts .payment .pix-key button {
+    border-radius: 40px;
+    font-size: 24px;
+    line-height: normal;
+  }
 
-  #conteudo #parceires .parceires .parceire .img {
+  #main #partners .list .item .figure {
     width: 320px;
   }
-  #conteudo #parceires .parceires .parceire .texto {
+  #main #partners .list .item .text {
     width: 630px;
     padding: 30px 40px 40px 40px;
     border-radius: 40px;
   }
-  #conteudo #parceires .parceires .parceire .texto p {
+  #main #partners .list .item .text p {
     font-size: 24px;
     line-height: 40px;
   }
-  #conteudo #parceires .parceires .parceire .texto a,
-  #conteudo #mapeamento .textos .btn-to-form a,
-  #conteudo #conselho-municipal .textos a {
-    border-radius: 40px;
-    font-size: 26px;
-    line-height: normal;
-  }
-  #conteudo #parceires .parceires .parceire .texto a .icone,
-  #conteudo #conselho-municipal .textos a .icone {
+  #main #partners .list .item .text a .icon,
+  #main #municipal-council .texts a .icon {
     font-size: 0.95em;
   }
 
-  #conteudo #mapeamento {
-    scroll-margin-top: calc(100vh - 630px);
+  #main #informational-materials .title,
+  #main #rights > .title {
+    width: 620px;
+  }
+  #main #informational-materials .list {
+    width: 900px;
+    gap: 60px;
+  }
+  #main #informational-materials .list .card {
+    width: calc(100% - 100px);
+    margin: auto;
+  }
+  #main #informational-materials .list .item:nth-child(odd) .card,
+  #main #rights .list .card:nth-child(1) {
+    transform: translateX(-100px);
+  }
+  #main #informational-materials .list .item:nth-child(even) .card,
+  #main #rights .list .card:last-child {
+    transform: translateX(100px);
+  }
+  #main #informational-materials .list .card .figure {
+    width: 410px;
+    height: 150px;
+    border-radius: 40px;
+  }
+  #main #informational-materials .list .card .text,
+  #main #rights .list .card .text {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  #main #informational-materials .list .card .icon {
+    font-size: 2em;
   }
 
-  #conteudo #direitos .frase-efeito {
-    width: 600px;
+  #main #mapping {
+    scroll-margin-top: calc(100vh - 630px);
   }
-  #conteudo #direitos .direitos .card {
+  #main #mapping,
+  #main #donation {
+    flex-direction: row;
+  }
+  #main #mapping .texts .btn-to-form {
+    align-items: end;
+    margin: .7em 0 0;
+  }
+  #main #mapping .texts .btn-to-form a {
+    font-size: 26px;
+  }
+
+  #main #rights .list .card {
     border-radius: 40px;
     width: 575px;
   }
-  #conteudo #direitos .direitos .card:nth-child(1) {
-    transform: translateX(-100px);
-  }
-  #conteudo #direitos .direitos .card:last-child {
-    transform: translateX(100px);
-  }
-  #conteudo #direitos .direitos .card .img {
+  #main #rights .list .card .figure {
     width: 220px;
     height: 160px;
     border-radius: 40px;
   }
-  #conteudo #direitos .direitos .card .texto {
-    font-size: 24px;
-    line-height: 40px;
-  }
-  #conteudo #direitos .direitos hr {
+  #main #rights .list hr {
     width: 70%;
   }
 
-  #conteudo #topo {
-    right: 2%;
-    padding: 20px 44px 20px 48px;
-    font-size: 3.3em;
+  #main #municipal-council .texts .title,
+  #main #donation .texts .title {
+    width: max-content;
+  }
+  #main #municipal-council .texts a {
+    margin: 0.7em 0 0.1em;
   }
 
-  #rodape {
+  #main #donation {
+    scroll-margin-top: calc(100vh - 680px);
+  }
+  #main #donation .texts {
+    width: 617px;
+  }
+  #main #donation .texts .title {
+    margin: 0;
+  }
+  #main #donation .texts .payment .pix-key .note {
+    font-size: 20px;
+  }
+  #main #donation .figure {
+    width: 450px;
+    height: 100%;
+  }
+
+  #main #topo {
+    right: 2%;
+    padding: 20px 42px 20px 46px;
+    font-size: 3em;
+  }
+
+  #footer {
     padding: 70px 100px 50px;
   }
-  #rodape .logo {
+  #footer .logo {
     width: 100px;
   }
-  #rodape .contatos {
+  #footer .contacts {
     gap: 20px;
     padding: 35px 35px 30px;
     border-radius: 40px;
   }
-  #rodape .contatos .card-tell h3.titulo .texto {
+  #footer .contacts .card-tell h3.title .text {
     font-size: 28px;
   }
-  #rodape .contatos .card-tell h4.titulo .texto,
-  #rodape .pesquisas h4.titulo .texto {
+  #footer .contacts .card-tell h4.title .text,
+  #footer .research h4.title .text {
     font-size: 24px;
   }
-  #rodape .contatos .card-tell .titulo .icone,
-  #rodape .pesquisas .titulo .icone {
+  #footer .contacts .card-tell .title .icon,
+  #footer .research .title .icon {
     font-size: 1.5em;
   }
-  #rodape .contatos .card-tell .tells .tell .icone,
-  #rodape .pesquisas .fonts .font .icone,
-  #rodape .tells-emergencia .tells .tell .icone {
+  #footer .contacts .card-tell .tells .tell .icon,
+  #footer .research .fonts .font .icon,
+  #footer .tells-emergencia .tells .tell .icon {
     font-size: 1.3em;
   }
-  #rodape .contatos .card-tell .tells .tell,
-  #rodape .pesquisas .fonts .font {
+  #footer .contacts .card-tell .tells .tell,
+  #footer .research .fonts .font {
     font-size: 24px;
     border-radius: 30px;
   }
-  #rodape .contatos hr {
+  #footer .contacts hr {
     margin-bottom: 10px;
   }
-  #rodape .tells-emergencia {
+  #footer .tells-emergencia {
     margin-top: -450px;
   }
-  #rodape .tells-emergencia .texto {
+  #footer .tells-emergencia .text {
     font-size: 24px;
   }
-  #rodape .tells-emergencia .tells .tell {
+  #footer .tells-emergencia .tells .tell {
     font-size: 20px;
   }
-  #rodape .copyright {
+  #footer .copyright {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 1200px) and (orientation: landscape) { /* Mobile Deitado */
-  #cabecalho .logo {
+@media screen and (max-width: 1200px) and (orientation: landscape) { /* landscape mobile */
+  #header .logo {
     width: 215px;
   }
-  #cabecalho .nav-desktop .menu a {
+  #header .nav-desktop .menu a {
     padding: 10px;
   }
-  #cabecalho .nav-desktop .menu .dropdown {
+  #header .nav-desktop .menu .dropdown {
     margin-right: 2.4em;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
+  #header .nav-desktop .menu .dropdown .dropdown-icon {
     font-size: 3.4em;
   }
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
+  #header .nav-desktop .menu .dropdown .dropdown-content {
     border-radius: 20px;
     margin-left: -200%;
   }
-  #cabecalho .nav-desktop .menu .link-principal a {
+  #header .nav-desktop .menu .main-link a {
     padding: 10px 20px;
   }
 
-  #conteudo #introducao .ilustracao {
+  #main #hero .figure {
     width: 335px;
   }
-  #conteudo #introducao .frase-efeito {
+  #main #hero .text {
     font-size: 28px;
     transform: translate(-15%, -2%);
   }
 
-  #conteudo #finalidades,
-  #conteudo #mapeamento,
-  #conteudo #conselho-municipal {
+  #main #objectives,
+  #main #mapping,
+  #main #donation {
     padding: 45px 30px;
+  }
+  #main #objectives,
+  #main #mapping,
+  #main #municipal-council {
     gap: 4em;
   }
-  #conteudo #finalidades .textos .lista {
+  #main #objectives .texts,
+  #main #mapping .texts,
+  #main #municipal-council .texts,
+  #main #donation .texts {
+    width: 500px;
+    align-items: center;
+  }
+  #main #objectives .texts .title,
+  #main #mapping .texts .title,
+  #main #municipal-council .texts .title {
+    margin-bottom: 2px;
+  }
+  #main #objectives .texts .list {
     padding-left: 4em;
   }
-  #conteudo #finalidades .textos .lista li::before {
+  #main #objectives .texts .list li::before {
     left: -9%;
   }
-  #conteudo #finalidades .img img,
-  #conteudo #mapeamento .img img,
-  #conteudo #conselho-municipal .img img {
+  #main #objectives .img,
+  #main #mapping .img,
+  #main #municipal-council .figure {
+    width: auto;
+    height: 260px;
+  }
+  #main #objectives .figure img,
+  #main #mapping .figure img,
+  #main #municipal-council .figure img {
     border-radius: 40px;
   }
 
-  #conteudo #atividades,
-  #conteudo #parceires,
-  #conteudo #direitos {
+  #main #activities,
+  #main #partners,
+  #main #rights {
     padding: 70px 0;
   }
-  #conteudo #atividades .lista .atividade p {
+  #main #activities .list .item p {
     width: 60%;
   }
-  #conteudo #atividades .lista .atividade:nth-child(odd) p {
+  #main #activities .list .item:nth-child(odd) p {
     transform: translateX(-40px);
   }
-  #conteudo #atividades .lista .atividade:nth-child(even) p {
+  #main #activities .list .item:nth-child(even) p {
     transform: translateX(40px);
   }
-  #conteudo #atividades .ilustracoes {
+  #main #activities .img-carousel {
     margin-top: -1em;
   }
-  #conteudo #membres .ilustracoes hr,
-  #conteudo #atividades .ilustracoes hr {
+  #main #members .img-carousel hr,
+  #main #activities .img-carousel hr {
     transform: translateY(32vh);
   }
-  #conteudo #membres .ilustracoes .imgs,
-  #conteudo #atividades .ilustracoes .imgs {
+  #main #members .img-carousel .img-list,
+  #main #activities .img-carousel .img-list {
     padding-left: calc(100vw - 70vw);
     padding-right: calc(100vw - 70vw);
   }
-  #conteudo #membres .ilustracoes .imgs figure,
-  #conteudo #atividades .ilustracoes .imgs figure {
+  #main #members .img-carousel .img-list figure,
+  #main #activities .img-carousel .img-list figure {
     border-radius: 5em;
     width: 40vw;
   }
-  #conteudo #membres .ilustracoes .aviso,
-  #conteudo #atividades .ilustracoes .aviso {
+  #main #members .img-carousel .note,
+  #main #activities .img-carousel .note {
     margin-top: 2em;
   }
 
-  #conteudo #membres {
-    padding: 45px 0px 70px 0px;
+  #main #members {
+    padding: 45px 0px 60px 0px;
     gap: 10em;
   }
-  #conteudo #membres .diretories .ilustracoes hr {
+  #main #members .directors .img-carousel hr {
     transform: translateY(35vh);
   }
-  #conteudo #membres .diretories .ilustracoes .imgs {
+  #main #members .directors .img-carousel .img-list {
     padding-left: calc(100vw - 64vw);
     padding-right: calc(100vw - 64vw);
   }
-  #conteudo #membres .diretories .ilustracoes .imgs figure {
+  #main #members .directors .img-carousel .img-list figure {
     width: 220px;
   }
-  #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
+  #main #members .directors .img-carousel .img-list figure figcaption {
     font-size: 16px;
     bottom: 2.4vh;
   }
+  #main #members .presentation .img-carousel hr {
+    transform: translateY(42vh);
+  }
+  #main #members .presentation .img-carousel .video {
+    width: 60vw;
+    height: 75vh;
+    border-radius: 5em;
+  }
 
-  #conteudo #parceires .parceires .parceire .texto {
+  #main #informational-materials .list .card {
+    width: 600px;
+    margin: auto;
+  }
+  #main #informational-materials .list .card .figure {
+    width: 380px;
+    height: 120px;
+  }
+
+  #main #partners .list .item .text {
     width: 430px;
   }
-  #conteudo #parceires .parceires .parceire .texto a {
+  #main #partners .list .item .text a {
     gap: 20px;
   }
 
-  #conteudo #direitos .direitos {
+  #main #mapping .texts .btn-to-form {
+    margin: .7em auto 0;
+  }
+
+  #main #rights {
+    padding: 80px 0;
+  }
+  #main #rights .list {
     gap: 40px;
   }
-  #conteudo #direitos .direitos .card {
+  #main #rights .list .card {
     width: 555px;
   }
-  #conteudo #direitos .direitos .card .img {
+  #main #rights .list .card .figure {
     width: 200px;
     height: 140px;
   }
-  #conteudo #direitos .direitos hr {
+  #main #rights .list hr {
     width: 80%;
   }
 
-  #conteudo #topo {
+  #main #municipal-council {
+    padding-top: 30px;
+  }
+  #main #municipal-council .texts a {
+    margin: 0.9em auto;
+  }
+
+  #main #topo {
     right: 2.5%;
     font-size: 5em;
   }
 
-  #rodape {
+  #footer {
     padding: 60px 40px 10px;
   }
-  #rodape .contatos .card-tell .titulo .icone,
-  #rodape .pesquisas .titulo .icone {
+  #footer .contacts .card-tell .title .icon,
+  #footer .research .title .icon {
     font-size: 2em;
   }
-  #rodape .tells-emergencia {
+  #footer .tells-emergencia {
     margin-top: -48%;
   }
-  #rodape .img {
+  #footer .figure {
     width: 250px;
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 1200px) and (orientation: portrait) { /* Tablets */
-  #cabecalho {
+@media screen and (min-width: 500px) and (max-width: 1200px) and (orientation: portrait) { /* tablets */
+  #header {
     padding: 10px 40px;
     padding-left: 20px;
   }
-  #cabecalho .menu-icon {
+  #header .menu-icon {
     font-size: 4.5em;
   }
-  #cabecalho #modal-container #menu .titulo {
+  #header #modal-container #menu .title {
     font-size: 28px;
   }
-  #cabecalho #modal-container #menu .nav .menu a,
-  #cabecalho .nav-desktop .menu a {
+  #header #modal-container #menu .nav .menu a,
+  #header .nav-desktop .menu a {
     font-size: 24px;
   }
 
-  #conteudo #finalidades,
-  #conteudo #mapeamento,
-  #conteudo #conselho-municipal {
+  #main #objectives,
+  #main #mapping,
+  #main #municipal-council {
     padding: 45px 40px 90px;
     gap: 5em;
   }
-  #conteudo #finalidades .textos,
-  #conteudo #mapeamento .textos,
-  #conteudo #conselho-municipal .textos {
+  #main #objectives .texts,
+  #main #mapping .texts,
+  #main #municipal-council .texts {
     gap: 1em;
   }
-  #conteudo #finalidades .textos .titulo,
-  #conteudo #mapeamento .textos .titulo,
-  #conteudo #conselho-municipal .textos .titulo {
+  #main #objectives .texts .title,
+  #main #mapping .texts .title,
+  #main #municipal-council .texts .title {
     font-size: 28px;
   }
-  #conteudo #finalidades .textos .lista {
+  #main #objectives .texts .list {
     padding-left: 3.5em;
   }
-  #conteudo #finalidades .textos .lista li,
-  #conteudo #mapeamento .textos p,
-  #conteudo #conselho-municipal .textos p {
+  #main #objectives .texts .list li,
+  #main #mapping .texts p,
+  #main #municipal-council .texts p {
     font-size: 24px;
     line-height: 40px;
   }
-  #conteudo #finalidades .textos .lista li::before {
+  #main #objectives .texts .list li::before {
     left: -9%;
   }
-  #conteudo #finalidades .img,
-  #conteudo #mapeamento .img,
-  #conteudo #conselho-municipal .img {
+  #main #objectives .img,
+  #main #mapping .img,
+  #main #municipal-council .figure {
     width: 415px;
   }
-  #conteudo #finalidades .img img,
-  #conteudo #mapeamento .img img,
-  #conteudo #conselho-municipal .img img {
+  #main #objectives .figure img,
+  #main #mapping .figure img,
+  #main #municipal-council .figure img {
     border-radius: 45px;
   }
-  #conteudo #atividades,
-  #conteudo #parceires,
-  #conteudo #direitos {
+  #main #activities,
+  #main #partners,
+  #main #rights {
     gap: 6em;
   }
-  #conteudo #atividades .titulo,
-  #conteudo #parceires .titulo {
+  #main #activities .title,
+  #main #partners .title {
     font-size: 28px;
     line-height: 40px;
   }
-  #conteudo #atividades .lista {
+  #main #activities .list {
     gap: 5em;
   }
-  #conteudo #atividades .lista .atividade p {
+  #main #activities .list .item p {
     font-size: 22px;
     line-height: 35px;
     padding: 20px 25px 30px;
   }
-  #conteudo #membres .ilustracoes .aviso,
-  #conteudo #atividades .ilustracoes .aviso {
+  #main #members .img-carousel .note,
+  #main #activities .img-carousel .note {
     font-size: 20px;
   }
-  #conteudo #membres .ilustracoes .aviso .icone,
-  #conteudo #atividades .ilustracoes .aviso .icone {
+  #main #members .img-carousel .note .icon,
+  #main #activities .img-carousel .note .icon {
     font-size: 1.4em;
   }
-  #conteudo #membres .frase-efeito,
-  #conteudo #direitos .frase-efeito {
+  #main #members .title,
+  #main #rights > .title {
     font-size: 28px;
     line-height: 45px;
   }
-  #conteudo #membres {
+  #main #members {
     gap: 100px;
     padding: 50px 0px 110px;
   }
-  #conteudo #membres .ilustracoes hr,
-  #conteudo #atividades .ilustracoes hr {
+  #main #members .img-carousel hr,
+  #main #activities .img-carousel hr {
     transform: translateY(500%);
   }
-  #conteudo #membres .diretories .ilustracoes hr {
+  #main #members .directors .img-carousel hr {
     transform: translateY(650%);
   }
-  #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
+  #main #members .directors .img-carousel .img-list figure figcaption {
     font-size: 22px;
     bottom: 2.8vh;
   }
-  #conteudo #parceires .parceires .parceire {
+  #main #partners .list .item {
     gap: 4em;
   }
-  #conteudo #parceires .parceires .parceire .img {
+  #main #partners .list .item .figure {
     width: 350px;
   }
-  #conteudo #parceires .parceires .parceire .img img {
+  #main #partners .list .item .figure img {
     border-radius: 45px;
   }
-  #conteudo #parceires .parceires .parceire .texto {
+  #main #partners .list .item .text {
     width: 430px;
     padding: 28px 35px 40px;
   }
-  #conteudo #parceires .parceires .parceire .texto p {
+  #main #partners .list .item .text p {
     font-size: 24px;
     line-height: 40px;
   }
-  #conteudo #parceires .parceires .parceire .texto a,
-  #conteudo #mapeamento .textos .btn-to-form a,
-  #conteudo #conselho-municipal .textos a {
+  #main #partners .list .item .text a,
+  #main #mapping .texts .btn-to-form a,
+  #main #municipal-council .texts a {
     font-size: 26px;
     line-height: 32px;
   }
-  #conteudo #parceires .parceires .parceire .texto a .icone,
-  #conteudo #mapeamento .textos .btn-to-form a .icone,
-  #conteudo #conselho-municipal .textos a .icone {
+  #main #partners .list .item .text a .icon,
+  #main #mapping .texts .btn-to-form a .icon,
+  #main #municipal-council .texts a .icon {
     font-size: 1.15em;
   }
-  #conteudo #mapeamento .textos .btn-to-form a {
+  #main #mapping .texts .btn-to-form a {
     margin: 0.9em auto 1em;
     max-width: 300px;
   }
-  #conteudo #direitos .direitos .card {
+  #main #rights .list .card {
     width: 330px;
     border-radius: 45px;
   }
-  #conteudo #direitos .direitos .card .img {
+  #main #rights .list .card .figure {
     width: 330px;
     border-radius: 45px;
   }
-  #conteudo #direitos .direitos .card .texto {
+  #main #rights .list .card .text {
     font-size: 24px;
     line-height: 40px;
   }
-  #conteudo #direitos .direitos hr {
+  #main #rights .list hr {
     width: 120%;
   }
-  #conteudo #conselho-municipal .textos .titulo {
+  #main #municipal-council .texts .title {
     width: 100%;
   }
-  #conteudo #conselho-municipal .textos a {
+  #main #municipal-council .texts a {
     max-width: 360px;
   }
-  #conteudo #topo {
+  #main #topo {
     right: 4.5%;
     bottom: 4%;
     padding: 20px 42px 20px 46px;
     font-size: 4em;
   }
 
-  #rodape {
+  #footer {
     padding: 70px 31px 90px;
     gap: 8em;
   }
-  #rodape .logo {
+  #footer .logo {
     width: 100px;
   }
-  #rodape .contatos .card-tell {
+  #footer .contacts .card-tell {
     padding: 35px 30px;
     gap: 5px;
     border-radius: 30px;
     max-width: 400px;
   }
-  #rodape .contatos .card-tell .titulo .texto {
+  #footer .contacts .card-tell .title .text {
     font-size: 24px;
   }
-  #rodape .contatos .card-tell .titulo .icone {
+  #footer .contacts .card-tell .title .icon {
     font-size: 1.2em;
   }
-  #rodape .contatos .card-tell .tells .tell {
+  #footer .contacts .card-tell .tells .tell {
     font-size: 22px;
   }
-  #rodape .contatos .card-tell .tells .tell .icone,
-  #rodape .tells-emergencia .tells .tell .icone {
+  #footer .contacts .card-tell .tells .tell .icon,
+  #footer .tells-emergencia .tells .tell .icon {
     font-size: 1.3em;
   }
-  #rodape .tells-emergencia {
+  #footer .tells-emergencia {
     width: 350px;
   }
-  #rodape .tells-emergencia .texto {
+  #footer .tells-emergencia .text {
     font-size: 22px;
   }
-  #rodape .tells-emergencia .tells .tell {
+  #footer .tells-emergencia .tells .tell {
     font-size: 20px;
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) and (orientation: portrait) { /* Particularidades de celulares maiores */
-  #conteudo #membres .ilustracoes hr,
-  #conteudo #atividades .ilustracoes hr {
+@media screen and (min-width: 400px) and (max-width: 500px) and (orientation: portrait) { /* larger mobile */
+  #main #members .img-carousel hr,
+  #main #activities .img-carousel hr {
     transform: translateY(390%);
   }
-  #conteudo #membres .diretories .ilustracoes hr {
+  #main #members .directors .img-carousel hr {
     transform: translateY(550%);
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape) {
-  #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
+@media screen and (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape) { /* smaller desktops */
+  #header .nav-desktop .menu .dropdown .dropdown-icon {
     padding-right: 32px;
     font-size: 2.8em;
   }
 }
 
-@media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de telas enormes */
-  #cabecalho {
+@media screen and (min-width: 1500px) and (orientation: landscape) { /* larger desktops */
+  #header {
     padding-right: 80px;
     padding-left: 75px;
   }
-  #cabecalho .nav-desktop .menu .dropdown {
+  #header .nav-desktop .menu .dropdown {
     padding-right: 1em;
   }
 
-  #conteudo #atividades .lista .atividade p {
+  #main #hero .figure {
+    width: 700px;
+  }
+  #main #hero .text {
+    font-size: 44px;
+    line-height: 68px;
+    transform: translate(-15%, -26%);
+  }
+
+  #main #activities .list .item p {
     width: 40%;
   }
-  #conteudo #atividades .lista .atividade:nth-child(odd) p {
+  #main #activities .list .item:nth-child(odd) p {
     transform: translateX(-150px);
   }
-  #conteudo #atividades .lista .atividade:nth-child(even) p {
+  #main #activities .list .item:nth-child(even) p {
     transform: translateX(150px);
   }
-  #conteudo #membres .ilustracoes hr,
-  #conteudo #atividades .ilustracoes hr {
+  #main #members .img-carousel hr,
+  #main #activities .img-carousel hr {
     transform: translateY(550%);
   }
-  #conteudo #membres .diretories .ilustracoes hr {
+  #main #members .directors .img-carousel hr {
     transform: translateY(650%);
   }
 }
