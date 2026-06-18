@@ -985,7 +985,7 @@
 }
 
 /* donation */
-#main #donation {
+/* #main #donation {
   padding: 40px 30px 80px;
   align-items: center;
 }
@@ -1022,7 +1022,7 @@
   font-weight: 500;
 }
 
-#main #donation .texts .payment .pix-key .sr-only { /* screen reader only */
+#main #donation .texts .payment .pix-key .sr-only { // screen reader only
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1036,7 +1036,7 @@
 
 #main #donation .figure {
   height: 318px;
-}
+} */
 
 /* btn to top */
 #main #topo {
