@@ -10,13 +10,13 @@
 @font-face {
   font-family: "Nunito";
   font-display: swap;
-  src: url(../fonts/nunito/Nunito-VariableFont-wght.ttf) format(truetype);
+  src: url(../fonts/nunito/nunito-variable-font-wght.ttf) format(truetype);
 }
 
 @font-face {
   font-family: "Open Dyslexic";
   font-display: swap;
-  src: url(../fonts/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
+  src: url(../fonts/open-dyslexic/open-dyslexic-alta-regular.otf) format(opentype);
 }
 
 .fa-solid,
