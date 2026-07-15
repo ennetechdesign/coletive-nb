@@ -548,7 +548,7 @@
   }
 
   #main #donation {
-    scroll-margin-top: calc(100vh - 680px);
+    scroll-margin-top: calc(100vh - 685px);
   }
   #main #donation .texts {
     width: 617px;
