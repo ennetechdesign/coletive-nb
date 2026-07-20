@@ -53,6 +53,7 @@
  ├── favicon/                # Arquivos da logo como ícone  
  ├── fonts/                  # Arquivos das fontes utilizadas  
  │   ├── geometos-rounded/
+ │   ├── nunito/
  │   ├── open-dyslexic/
  ├── img/                    # Imagens utilizadas 
  ├── js/                     # Arquivos JavaScript
@@ -113,6 +114,9 @@
    Exemplo de uso:  
    `font-family: "Nunito";` ou 
    `font-family: var(--text);`
+ - **Open Dyslexic**  
+   Exemplo de uso:  
+   `font-family: "Open Dyslexic";`
 
 
 ## 🌟 Referências de Uso
@@ -120,6 +124,7 @@
  - [Família de ícones utilizada](https://fontawesome.com/icons)
  - [Fonte de Texto: Geometos Rounded](https://www.dafont.com/pt/geometos-rounded.font)
  - [Fonte de Texto: Nunito](https://fonts.google.com/specimen/Nunito)
+ - [Fonte de Texto: Open Dyslexic](https://www.dafont.com/pt/open-dyslexic.font)
  - [Ilustrações de pessoas por Storyset](https://storyset.com/people)
 
 
